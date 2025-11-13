@@ -10,12 +10,24 @@ from src.db import models
 from src.db.schemas import SceneModel
 
 
+
+
+def _replace_todo(value):
+    if isinstance(value, dict):
+        return {k: _replace_todo(v) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_replace_todo(v) for v in value]
+    if isinstance(value, str) and value.strip().upper() == "TODO":
+        return 0.0
+    return value
+
 def load_scene_yaml(path: Path) -> SceneModel:
     with path.open() as fh:
         raw = yaml.safe_load(fh)
     if not isinstance(raw, dict) or "scene" not in raw:
         raise ValueError(f"YAML file {path} does not contain a 'scene' root object")
-    return SceneModel.model_validate(raw["scene"])
+    cleaned = _replace_todo(raw["scene"])
+    return SceneModel.model_validate(cleaned)
 
 
 def upsert_scene(session: Session, scene_data: SceneModel) -> models.Scene:
