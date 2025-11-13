@@ -7,30 +7,43 @@ Erfassung von Versammlungsstößen (Gather Shots) aus Xavier Gretillats *L'appre
 - Kapitelnummer + Diagrammnummer, z. B. `2.1` für "Direct Point – Gather Shot by One Band".
 - Interner Schlüssel: `VS-Lang-02-01` (`VS` = Versammlungsstoß, `Lang` = Long Gather, `02` = Kapitel 2, `01` = erstes Diagramm).
 
+## Datenfluss
+1. Rohmaterial (`data/raw/gretillat`) enthält PNGs/Texte aus dem Buch.
+2. Szenenbeschreibung als YAML (`data/annotations/...`).
+3. CLI `btrainer-capture capture` aktualisiert Ballpositionen aus dem Bild und schreibt zurück in YAML sowie in die PostgreSQL-Datenbank (`BTRAINER_DATABASE_URL`).
+4. `btrainer-capture ingest` überführt YAML-Dateien in die Datenbank.
+5. Alembic-Migrationen halten das DB-Schema versioniert (`alembic/`).
+
 ## Koordinatensystem
-- Rechteckiger Match-Tisch 40 × 80 Einheiten (≈ 284 × 142 cm) als Standard.
-- Optional kleines Turnierbillard 30 × 60 Einheiten (≈ 210 × 105 cm); Variante wird in der Szene vermerkt.
+- Rechteckiger Match-Tisch 40 × 80 Einheiten (≈ 284 × 142 cm) als Standard, Variante "small_tournament" 30 × 60 Einheiten.
 - Ursprung (0,0) unten links, X entlang langer Bande, Y entlang kurzer Bande.
 - Rasterauflösung 0,5 Einheiten; Detailausschnitte bei Bedarf mit höherer Genauigkeit (0,5 cm).
 
-## Datenelemente
-- `balls`: Positionen der drei Bälle (`B1` = Spielball, `B2`, `B3`).
-- `ghost_ball`: Position des Ghost Balls bei der Berührung mit `B2` (ermöglicht Rückschluss auf Treffpunkt und Laufweg `B2`).
-- `cue`: Stoßparameter (Stoßrichtung, Attackhöhe, Effet-Stufe, Queue-Neigung falls relevant).
+## CLI-Bedienung
+```bash
+export BTRAINER_DATABASE_URL=postgresql+psycopg://user:pass@localhost:5432/btrainer
+# Interaktive Erfassung
+btrainer-capture capture data/annotations/gretillat/VS-Lang-02-01.yaml data/raw/gretillat/long_gather-185.png
+# YAML → DB importieren
+btrainer-capture ingest data/annotations/gretillat/VS-Lang-02-01.yaml
+```
+
+## Datenelemente (YAML)
+- `balls`: Positionen der tatsächlichen Bälle `B1`, `B2`, `B3`.
+- `ghost_ball`: virtuelle Position des Ghost Balls bei der Berührung mit `B2`.
+- `cue`: Stoßparameter (Stoßrichtung, Attackhöhe, Effet-Stufe, Queue-Neigung, Notizen).
 - `tempo_force`: Tempo (0–5) und Kraft (0–5) gemäß Buch.
-- `ball_contact`: Überdeckungsgrad zwischen `B1` und `B2` (z. B. `2/3` oder 0.66).
-- `trajectory`: Segmentliste für `B1`, `B2`, `B3` (Geraden, Bandenkontakte).
-- `text`: Quellenzitate (Originalsprache) und deutschsprachige Zusammenfassung.
-- `remarks`: Weitere Hinweise (z. B. Toleranzen, Varianten, eigene Beobachtungen).
+- `trajectory`: Segmentliste pro Ball (Geraden, Banden, stationäre Phasen).
+- `remarks`: Hinweise aus dem Buch (z. B. Toleranzen, Varianten).
+- `text`: Originalexcerpt + deutsche Kurzfassung zur späteren semantischen Suche.
 
 ## Vorgehen
 1. **Quelle prüfen**: PNG/TXT unter `data/raw/gretillat/` öffnen.
-2. **Kalibrieren**: Zwei Referenzpunkte (Diamanten) wählen, um Pixel → Koordinate zu bestimmen.
-3. **Koordinaten messen**: Ballmittelpunkte, Ghost Ball und relevante Bandenpunkte erfassen.
-4. **Parameter übertragen**: Angaben zu Ballmenge, Effet, Stoßhöhe, Tempo/Kraft, Schwierigkeitsgrad.
-5. **Text erfassen**: Originalpassage (Kurztext) übernehmen und eine deutsche Zusammenfassung formulieren.
-6. **Struktur ausfüllen**: YAML-Datei unter `data/annotations/gretillat/` ergänzen.
-7. **Validieren**: Szene mit Notebook visualisieren; Plausibilität prüfen.
+2. **Kalibrieren & Klicken**: CLI führt durch drei Referenzpunkte + Ball-/Ghost-Positionen in einem Fenster.
+3. **Koordinaten prüfen**: CLI zeigt Pixel- und Tischwerte an.
+4. **Optional**: Zusätzliche Punkte für Trajektorien erfassen.
+5. **Speichern**: YAML wird aktualisiert, Szene landet via SQLAlchemy in der Datenbank.
+6. **Alembic**: Neue Tabellenfelder via `alembic revision --autogenerate -m "…"` + `alembic upgrade head` deployen.
 
 ## Begriffe
 - **Versammlungsstoß (Gather Shot)**: Stoß, bei dem die Bälle in einer Sammelzone zusammengeführt werden.
@@ -38,6 +51,6 @@ Erfassung von Versammlungsstößen (Gather Shots) aus Xavier Gretillats *L'appre
 - **Effet-Stufen**: Gemäß Effler (Stufen 1–4, 45°-Effet, >4). In den Daten als `effect_stage` gespeichert.
 
 ## ToDo
-- Kalibrierungs-Notebook erstellen.
-- Lookup-Tabellen (`effect_stages.yaml`, `ball_contact_levels.yaml`) befüllen.
-- Erste Szenen vollständig mit Koordinaten versehen.
+- Trajektorienpunkte aus YAML in CLI integrieren.
+- Textbausteine automatisch in Vektorindex überführen.
+- FastAPI-Endpunkt für Szenenabfrage bereitstellen.

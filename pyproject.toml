@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btrainer"
+version = "0.1.0"
+authors = [{name = "Btrainer Team"}]
+description = "Carom billiards training data tooling"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "SQLAlchemy>=2.0",
+    "alembic>=1.13",
+    "pydantic>=2.7",
+    "psycopg[binary]>=3.2",
+    "typer>=0.12",
+    "matplotlib>=3.9",
+    "opencv-python>=4.10",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "nbstripout>=0.8",
+    "black>=24.10",
+]
+
+[project.scripts]
+btrainer-capture = "src.tools.capture_scene:app"
