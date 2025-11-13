@@ -1,0 +1,60 @@
+# Vorlage für Versammlungsstoß-Szenen
+type: scene
+schema_version: 0.1
+id: TODO
+source:
+  work: "Gretillat - L'apprentissage du billard français"
+  section: TODO
+  page: TODO
+  internal_key: TODO  # z. B. VS-Lang-02-01
+difficulty: TODO  # easy | medium | hard
+table:
+  type: carom_standard
+  size_units: [40, 80]
+  unit: diamonds
+  origin: bottom_left
+  grid_resolution: 0.5
+  physical_size_cm: [284, 142]  # optional override for kleiner Tisch: [210, 105]
+  variant: match  # match | small_tournament
+balls:
+  B1:
+    color: white
+    position: [TODO_X, TODO_Y]
+  B2:
+    color: yellow
+    position: [TODO_X, TODO_Y]
+  B3:
+    color: red
+    position: [TODO_X, TODO_Y]
+ghost_ball:
+  position: [TODO_X, TODO_Y]
+  notes: "Virtuelle Position des Spielballs bei Kontakt mit B2"
+ball_contact:
+  fraction: TODO  # numerisch, z. B. 0.66
+  label: TODO      # z. B. "2/3-voll"
+cue:
+  cue_direction: [TODO_X, TODO_Y]  # normierter Richtungsvektor vom B1 zum Ghost Ball
+  attack_height: TODO  # z. B. "low"
+  effect_stage: TODO   # stage_0 .. stage_4, stage_45_deg, stage_4_plus
+  effect_side: none | left | right
+  cue_inclination_deg: 0
+  notes: []
+tempo_force:
+  tempo: TODO  # 0-5
+  force: TODO  # 0-5
+  comments: ""
+trajectory:
+  B1:
+    - type: line
+      to: [TODO_X, TODO_Y]
+    # weitere Segmente
+  B2: []
+  B3: []
+text:
+  original_language: fr
+  original_excerpt: |
+    TODO (englische oder französische Kurzbeschreibung aus Quelle)
+  de_summary: |
+    TODO (deutsche Zusammenfassung / freie Übersetzung)
+remarks:
+  - TODO

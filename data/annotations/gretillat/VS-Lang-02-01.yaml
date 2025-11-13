@@ -1,0 +1,109 @@
+scene:
+  id: VS-Lang-02-01
+  title: Versammlungsstoß – Direktpunkt über eine Bande
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.1 Direct point – Gather shot by one band
+    page: 185
+  difficulty: easy
+  description: Grundstoß zum Sammeln der Bälle über eine lange Bande.
+  table:
+    type: carom_standard
+    size_units:
+    - 40
+    - 80
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284
+    - 142
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 24.12
+      - 13.9
+    B2:
+      color: yellow
+      position:
+      - 27.72
+      - 19.71
+    B3:
+      color: red
+      position:
+      - 38.54
+      - 1.09
+  ghost_ball:
+    position:
+    - 27.71
+    - 19.64
+    notes: Ghost Ball verbindet B1 mit B2 für 2/3-Volle Trefferlinie.
+  ball_contact:
+    fraction: 0.66
+    label: 2/3-voll
+  cue:
+    cue_direction:
+    - 0.5303
+    - 0.8478
+    attack_height: low
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0
+    notes:
+    - Stoßhöhe tief für Rücklauf
+  tempo_force:
+    tempo: 2
+    force: 3
+    comments: fort × vitesse normale
+  trajectory:
+    B1:
+    - type: line
+      to:
+      - 27.71
+      - 19.64
+    - type: cushion
+      cushion: long
+      position:
+      - TODO
+      - TODO
+    - type: line
+      to:
+      - TODO
+      - TODO
+    B2:
+    - type: line
+      to:
+      - TODO
+      - TODO
+    - type: line
+      to:
+      - TODO
+      - TODO
+    B3:
+    - type: stationary
+      notes: B3 bleibt in Sammelzone
+  text:
+    original_language: fr
+    original_excerpt: 'Quantité de bille: 2/3 de bille. Hauteur d’attaque: basse.
+      Effet: aucun.
+
+      Energie: fort - vitesse normale. La quantité de rotation obtenue par une
+
+      hauteur d’attaque basse et une vitesse normale suffit largement pour réaliser
+
+      le point.
+
+      '
+    de_summary: '2/3 Ball, tiefer Stoß, kein Effet. Normales Tempo plus starke Kraft
+      liefern
+
+      genügend Rücklauf, damit B1 vor B2 bleibt. B2 benötigt noch zwei Bandenlängen,
+
+      daher Kraft nahe Stufe 3.
+
+      '
+  remarks:
+  - Spielball muss minimal vor B2 bleiben, sonst Rückläufer in Sammelzone.
+  - Parameter an Material anpassen (Tuch/Banden).

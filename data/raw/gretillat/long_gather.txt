@@ -1,0 +1,614 @@
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+LONG GATHER SHOTS
+Gather shot is a point that allows the player to collect the balls in a reduced area called the
+"gather shot area". A long gather shot is a shot that uses the entire surface of the table, as
+opposed to a width gather shot where the balls remain in the third of the billiard table. The
+gather shot zone can be anywhere on the billiard table, but it is when the gather shot zone
+is near a cushion or corner that the margin of error increases.
+This chapter describes 67 long gather shot diagrams. Each of these typical gather shots can
+be declined in an infinite number of different positions, where the location of the balls and
+the distances change, but the type of gather shot remains unchanged. Here's an example:
+
+ch
+
+i
+llr
+
+U
+ot
+
+n
+er
+
+G
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+The diagram on the left shows the typical position. There are a multitude of other different
+positions, some of which are shown on the right, but in which the gather shot always
+remains the same.
+Long gather shots are points where accuracy is relative, unlike width gather shots where
+the player can be much more accurate due to the shorter distances. The place where the
+player ball hits the ball 3, the exact trajectory of the ball 2 and the energy of balls 1 and 2
+
+Part 2: Conception
+Pages 166 - 597
+
+182
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+are elements that are difficult to master perfectly in long gather shots, precisely because
+the distances are often important.
+The lengthy gather shots outlined in this chapter have very different difficulties. Some are
+very easy and therefore often used, while others are particularly difficult. These, even if
+they occur during the game, are points that players are reluctant to achieve because of their
+degree of difficulty. Even if for this reason the player gives up and chooses another
+solution, it is still important to know and work on them because they open up additional
+perspectives that can only be useful.
+All long gather shots are numbered
+and briefly described in the title.
+
+ch
+
+i
+llr
+
+U
+ot
+
+n
+er
+
+G
+
+The billiard table, the balls and the
+cue are conceptioned to respect the
+real proportions. The only element
+that is difficult to represent on the
+diagram is the impact of the balls
+on the bands.
+
+1
+92
+-4
+
+The balls are precisely positioned
+on the table. It is necessary to
+scrupulously respect their location
+to be sure that the position can be
+played according to the drawn
+trajectories.
+
+04
+
+31
+08
+
+The three balls are placed by means
+of marker lines. These are the lines
+in frame 47/2 and the lines
+connecting
+the
+respective
+diamonds.
+
+0
+
+Sometimes the balls had to be
+positioned outside of these marker
+lines. Reason why other markers
+are used. These are imaginary balls
+(drawn with crosses inside) that
+allow you to place a ball at a certain
+distance from a marker.
+
+The gather shots have been executed a number of times with the parameters that are
+described right next to the diagram. But you have to take into account the material that
+changes from table to table, from one set of balls to another and from one band to another.
+Part 2: Conception
+Pages 166 - 597
+
+183
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+It is therefore possible, depending on the material you are playing on, that the parameters
+may not be quite correct and may need to be adapted.
+Next to the long gather shot diagram is the description
+of the parameters. The first drawing represents balls 1
+and 2 and sets the amount of ball, the height of attack
+and the effect.
+Quantité de bille: 1/4 de bille
+Hauteur d’attaque: au centre
+Effet: maximum d’effet à gauche
+
+The force is represented by the weight of the cue,
+which depends on the position of the hand on the heel
+of the cue. Muscle force is not included. The force is
+calibrated in four levels: 1 weak, 2 medium, 3 strong
+and 4 very strong. Long gather shots are almost all
+calibrated between 3 and 4. Forces 1 and 2 are more
+for small points, placements and width gather shots.
+
+ale
+
+2
+
+1
+
+Speed is represented by the speed of the swinging
+movement of the forearm. It is calibrated in four levels:
+1 slow, 2 normal, 3 fast, 4 very fast. Slow speed is
+normally only used for small points, width gather shots
+or placements.
+
+31
+08
+
+1
+92
+-4
+
+3: Fort
+
+ch
+
+i
+llr
+
+Norm
+
+As for the last parameter, energy, it is described by
+separating its two components which are force and
+speed.
+
+U
+ot
+
+n
+er
+
+G
+2
+4
+
+Tail tilt is not included in these parameters since all
+these long gather shots are performed with a horizontal
+tail.
+
+0
+
+04
+
+All parameters are set to help the player in his choices. However, it is obvious that the
+force and speed parameters cannot be reduced to only four possibilities each. According to
+the same principle, it is logical that the different quantities of balls are far more numerous
+than the seven main ones. As for the point of attack, it is schematized as precisely as
+possible, but some uncertainty remains. Although every effort has been made to ensure
+that these parameters are set and drawn as accurately as possible, a certain margin of error
+remains.
+Above the diagram is the level of difficulty of the point: easy, medium, difficult. Below
+the drawing, at the bottom of the page, there are various useful remarks about the long
+gather shot or its parameters.
+In addition to the figures described on the following pages, there are many other diagrams.
+In addition, each player invents his own gather shot figures by mixing several trajectories
+or finding new solutions.
+
+Part 2: Conception
+Pages 166 - 597
+
+184
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+2.1. DIRECT POINT - GATHER SHOT BY ONE BAND
+Gather shot Difficulty: EASY
+
+Quantité de bille: 2/3 de bille
+Hauteur d’attaque: basse
+Effet: aucun
+Energie: fort - vitesse normale
+
+U
+ot
+
+n
+er
+
+Norm
+a
+
+le
+
+G
+
+2
+4
+
+2
+
+1
+
+ch
+
+i
+llr
+
+3: Fort
+
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+This is one of the four basic gather shots, one of the very first to be learned and worked
+on. The amount of rotation obtained by a low attack height and normal speed is more than
+enough to achieve the point. As for the force, it is indicated as strong because ball 2 still
+has two lengths to go. But in reality, it would be slightly less than 3.
+
+Part 2: Conception
+Pages 166 - 597
+
+185
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+2.2. DIRECT POINT - GATHER SHOT BY ONE BAND
+Gather shot Difficulty: EASY
+
+Quantité de bille: 1/2 bille
+Hauteur d’attaque: coulé
+Effet: sans effet
+Energie: fort - vitesse normale
+
+Norm
+
+n
+er
+
+ale
+
+G
+
+2
+
+U
+ot
+
+4
+
+2
+
+1
+
+ch
+
+i
+llr
+
+3: Fort
+
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+The only difficulty with this point is the touch of the amount of ball. If this is correct, balls
+1 and 2 follow each other almost to the corner. However, the player's ball must keep a
+slight lead over the ball 2, to avoid the back touch in the gather shot zone.
+
+Part 2: Conception
+Pages 166 - 597
+
+186
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+2.3. DIRECT POINT - TWO-BANDS GATHER SHOT
+Gather shot Difficulty: EASY
+
+Quantité de bille: 2/3 de bille
+Hauteur d’attaque: basse
+Effet: aucun
+Energie: fort - vitesse normale
+
+Norm
+
+n
+er
+
+ale
+
+G
+U
+ot
+
+2
+4
+
+2
+
+1
+
+ch
+
+i
+llr
+
+3: Fort
+
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+This is the second of four basic gather shots that you must first learn and work on. The
+distance between balls 2 and 3 is still quite large and the backspin requires a low attack
+height and a rather fast speed of execution.
+The point may become complicated if ball 3 is out of the corner, or if the distance between
+balls 1 and 2 or/and 2 and 3 increases.
+
+Part 2: Conception
+Pages 166 - 597
+
+187
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+2.4. DIRECT POINT - TWO-BANDS GATHER SHOT
+Gather shot Difficulty: EASY
+
+Quantité de bille: 3/4 de bille
+Hauteur d’attaque: très basse
+Effet: aucun
+Energie: fort - vitesse très rapide
+
+n
+er
+
+Très
+rapid
+e
+
+G
+
+4
+
+2
+
+3: Fort
+
+1
+
+ch
+
+i
+llr
+
+U
+ot
+
+4
+
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+The point as presented here is rather easy to achieve, even if the distance between balls 1
+and 2 is not as appreciable as in a normal draw.
+The length of the draw and the measurement of ball 2 are easily controllable. But the draw
+becomes very hard when the distance between balls 1 and 2 decreases.
+
+Part 2: Conception
+Pages 166 - 597
+
+188
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+2.5. DIRECT POINT - TWO-BANDS GATHER SHOT
+Gather shot Difficulty: EASY
+
+Quantité de bille: presque plein
+Hauteur d’attaque: au-dessus du centre
+Effet: beaucoup d’effet à gauche
+Energie: fort - vitesse rapide
+
+U
+ot
+
+n
+er
+
+Rapi
+de
+
+G
+
+3
+4
+
+2
+
+1
+
+ch
+
+i
+llr
+
+3: Fort
+
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+Not much to say about that. Except for maybe two things that are a little more delicate
+than the others. First of all the amount of very full ball and the attacking height just above
+the center are not always obvious to master. Secondly the wrong collision of the ball 2
+after its first rail is avoided if the cue ball goes before the ball 2.
+
+Part 2: Conception
+Pages 166 - 597
+
+189
+
+Long gather shots
+pages 182 - 251
+
+© All rights reserved
+please respect the copyright
+
+Gernot Ullrich
+49210831040
+
+2.6. DIRECT POINT - THREE-BANDS GATHER SHOT
+Gather shot Difficulty: EASY
+
+Quantité de bille: 3/4 de bille
+Hauteur d’attaque: mi-basse
+Effet: à droite
+Energie: fort - vitesse normale
+
+U
+ot
+
+n
+er
+
+Norm
+al
+
+e
+
+G
+
+2
+4
+
+2
+
+1
+
+ch
+
+i
+llr
+
+3: Fort
+
+0
+
+04
+
+31
+08
+
+1
+92
+-4
+This is the third of four basic gather shots that the beginner must work tirelessly. If it
+appears for a confirmed player as being simple, the beginner will have difficulty in
+spotting the tricks where this type of gather shot is possible. It is in fact the trajectory of
+ball 2 that is difficult to visualize, notably because of its proximity to the long cushion.
+The closer the ball 2 is to the rail, the harder the point is for the return of the cue ball to the
+ball 3.
+
+Part 2: Conception
+Pages 166 - 597
+
+190
+
+Long gather shots
+pages 182 - 251
+
+

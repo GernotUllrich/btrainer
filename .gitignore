@@ -1,0 +1,19 @@
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ignore copyright docs
+
+49210831040 Gernot Ullrich.pdf
+249241024020 Gernot Ullrich.pdf
+
+# ignore test data
+
+research
+
+# ignore notebook artefacts
+notebooks/.ipynb_checkpoints/
+notebooks/annotation_qc.ipynb

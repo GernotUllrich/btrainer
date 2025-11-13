@@ -1,0 +1,42 @@
+# Anspieltiefen nach 1/8-Teilung
+levels:
+  - id: full
+    label: Voll
+    fraction: 1.0
+    angle_deg: 0.0
+  - id: seven_eighths
+    label: Fast voll
+    fraction: 0.875
+    angle_deg: 7.2
+  - id: three_quarters
+    label: Dreiviertel voll
+    fraction: 0.75
+    angle_deg: 14.5
+  - id: five_eighths
+    label: Etwas mehr als halbvoll
+    fraction: 0.625
+    angle_deg: 22.1
+  - id: half
+    label: Halbvoll
+    fraction: 0.5
+    angle_deg: 30.0
+  - id: three_eighths
+    label: Etwas weniger als halbvoll
+    fraction: 0.375
+    angle_deg: 38.7
+  - id: quarter
+    label: Einviertelvoll
+    fraction: 0.25
+    angle_deg: 48.6
+  - id: one_eighth
+    label: Dünn
+    fraction: 0.125
+    angle_deg: 61.1
+  - id: one_sixteenth
+    label: Sehr dünn
+    fraction: 0.0625
+    angle_deg: 69.7
+  - id: hair_thin
+    label: Hauchdünn
+    fraction: 0.0313
+    angle_deg: 80.0

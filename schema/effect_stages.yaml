@@ -1,0 +1,23 @@
+# Effet-Stufen nach Effler
+stages:
+  - id: stage_0
+    label: kein Effet
+    description: Queue-Leder zentriert; keine Seitendrehung
+  - id: stage_1
+    label: Stufe 1
+    description: Lederkante an vertikale Mittellinie; leichter Effet
+  - id: stage_2
+    label: Stufe 2
+    description: Halbe Pomeranzenbreite nach außen
+  - id: stage_3
+    label: Stufe 3
+    description: Ganze Pomeranzenbreite nach außen (≈18 mm)
+  - id: stage_4
+    label: Stufe 4
+    description: Stark nach außen, noch außerhalb der Kicks-Zone
+  - id: stage_45_deg
+    label: 45°-Effet
+    description: wie Stufe 3, jedoch um 45° nach oben versetzt
+  - id: stage_4_plus
+    label: > Stufe 4
+    description: noch tiefer/weiter außen; nur für Spezialstöße
