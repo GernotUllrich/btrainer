@@ -17,3 +17,8 @@ research
 # ignore notebook artefacts
 notebooks/.ipynb_checkpoints/
 notebooks/annotation_qc.ipynb
+
+# Python build artefacts
+__pycache__/
+*.pyc
+src/btrainer.egg-info/

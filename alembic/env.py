@@ -10,7 +10,10 @@ from alembic import context
 config = context.config
 
 if config.config_file_name is not None:
-    fileConfig(config.config_file_name)
+    try:
+        fileConfig(config.config_file_name)
+    except KeyError:
+        pass
 
 def get_url() -> str:
     url = os.getenv("BTRAINER_DATABASE_URL")
