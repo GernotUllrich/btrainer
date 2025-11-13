@@ -1,0 +1,6 @@
+# Copy to .envrc and run `direnv allow` (requires direnv).
+# Automatically configures environment when entering the repository.
+
+layout python python3
+export BTRAINER_DATABASE_URL="postgresql+psycopg://localhost/btrainer"
+export PYTHONPATH="$PWD"
