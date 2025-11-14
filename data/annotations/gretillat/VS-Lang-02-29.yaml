@@ -1,0 +1,165 @@
+scene:
+  id: VS-Lang-02-29
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.29 Indirect Point By One Band – Gather Shot By Three Bands
+    page: 214
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 10.0
+      - 13.33
+    B2:
+      color: yellow
+      position:
+      - 13.33
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 37.45
+      - 1.9
+  ghost_ball:
+    position:
+    - 12.13
+    - 18.99
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: très bas'
+    - 'Effet: effet à gauche'
+    - 'Energie: fort - vitesse très rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse très rapide
+  trajectory:
+    B1:
+    - point:
+      - 12.02
+      - 18.62
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 9.99
+      - 20.13
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 7.22
+      - 20.69
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.2
+      - 20.9
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.08
+      - 20.77
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 7.78
+      - 18.01
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 15.38
+      - 14.52
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 22.6
+      - 10.6
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.06
+      - 5.82
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.33
+      - 2.46
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 38.89
+      - 47.79
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 15.13
+      - 78.85
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.35
+      - 64.93
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.88
+      - 8.02
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The difficulty consists in correcting the trajectory of the
+      cue ball so that it takes the
+
+      direction of the ball 3 by the long cushion. This correction is made by the
+      amount of
+
+      rotation, a mixture of very low attack height and very fast speed. Thus, the
+      cue ball makes
+
+      a curve that directs it into the return zone.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

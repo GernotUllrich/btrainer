@@ -1,0 +1,134 @@
+scene:
+  id: VS-Lang-02-49
+  title: Versammlungsstoß – Indirect Point By Four Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.49 Indirect Point By Four Bands – Gather Shot By One Band
+    page: 234
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 37.29
+      - 25.62
+    B2:
+      color: yellow
+      position:
+      - 38.3
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 2.52
+      - 5.44
+  ghost_ball:
+    position:
+    - 35.74
+    - 20.67
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque fine
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque fine'
+    - 'Hauteur d’attaque: mi-coulé'
+    - 'Effet: un peu d’effet à droite'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 35.78
+      - 20.71
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 22.62
+      - 0.0
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.33
+      - 22.97
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.99
+      - 74.36
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.01
+      - 65.56
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.32
+      - 6.79
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 39.31
+      - 19.38
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.99
+      - 0.0
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Ball 1 is one and a half balls
+
+      away from the long band.
+
+      2Ball 2 is located at an equal
+
+      1distance from the two
+
+      The biggest risk is the back touch of the ball 2 on the cue ball or the ball
+      3s. In order to
+
+      avoid this danger, ball 3 is placed at the height of the first diamond, leaving
+      space for ball
+
+      2 to come safely into the corner.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

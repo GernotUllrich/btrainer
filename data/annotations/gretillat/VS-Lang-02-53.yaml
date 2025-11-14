@@ -1,0 +1,124 @@
+scene:
+  id: VS-Lang-02-53
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.53 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 238
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 37.55
+      - 5.13
+    B2:
+      color: yellow
+      position:
+      - 30.67
+      - 13.33
+    B3:
+      color: red
+      position:
+      - 2.91
+      - 77.42
+  ghost_ball:
+    position:
+    - 31.45
+    - 12.81
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: très basse'
+    - 'Effet: effet à gauche'
+    - 'Energie: fort - vitesse très rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse très rapide
+  trajectory:
+    B1:
+    - point:
+      - 31.94
+      - 12.72
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.17
+      - 20.23
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.8
+      - 75.96
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.88
+      - 26.29
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.05
+      - 48.1
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 7.82
+      - 76.73
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The cue ball is placed half a
+
+      diamond away from the rail.
+
+      This point is particularly difficult. You have to play about half a ball, very
+      low with spin,
+
+      and with a slightly inclined cue because of the proximity of the band. All these
+      parameters
+
+      will cause a rather important curve in the trajectory of the cue ball after
+      its collision with
+
+      the ball 2. In addition, balls 1 and 2 cross their trajectory, creating a risk
+      of back touch-
+
+      crossing. In principle, the cue ball goes after the ball 2.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -1,0 +1,119 @@
+scene:
+  id: VS-Lang-02-05
+  title: Versammlungsstoß – Zweiband-Stoß mit starkem Effet
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.5 Direct point – Two-bands gather shot
+    page: 189
+  difficulty: easy
+  description: Variante mit nahezu vollem Ball, leicht erhöhter Stoßhöhe und starkem
+    Linkseffet.
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 27.71
+      - 30.24
+    B2:
+      color: yellow
+      position:
+      - 25.41
+      - 20.34
+    B3:
+      color: red
+      position:
+      - 0.89
+      - 1.38
+  ghost_ball:
+    position:
+    - 25.51
+    - 20.94
+    notes: Ghost Ball für fast vollen Treffpunkt.
+  ball_contact:
+    fraction: 0.88
+    label: Fast voll
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: above_center
+    effect_stage: stage_3
+    effect_side: left
+    cue_inclination_deg: 0.0
+    notes:
+    - Linkseffet mit leicht erhöhter Stoßhöhe, damit B1 vor B2 bleibt.
+  tempo_force:
+    tempo: 3
+    force: 3
+    comments: fort × vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 26.01
+      - 21.45
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.07
+      - 2.14
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 24.19
+      - 2.05
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 15.22
+      - 78.37
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.25
+      - 6.56
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Quantité de bille: presque plein. Hauteur d’attaque: au-dessus
+      du centre.
+
+      Effet: beaucoup d’effet à gauche. Energie: fort - vitesse rapide. La collision
+
+      intempestive de la bille 2 après sa première bande est évitée si la bille 1
+      passe
+
+      légèrement avant la bille 2.
+
+      '
+    de_summary: 'Fast voll angespielt, etwas oberhalb der Mittelachse getroffen und
+      mit kräftigem
+
+      Linkseffet gespielt. B1 muss die Bande vor B2 erreichen, damit sich die Bälle
+      im
+
+      Sammelbereich nicht stören.
+
+      '
+  remarks:
+  - Treffmenge sehr voll halten, sonst verliert B1 den Effekt.
+  - Reihenfolge B1 vor B2 sicherstellen, um eine Fehlkollision zu vermeiden.

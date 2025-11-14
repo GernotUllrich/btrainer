@@ -1,0 +1,125 @@
+scene:
+  id: VS-Lang-02-17
+  title: Versammlungsstoß – Indirect Point By Two Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.17 Indirect Point By Two Bands – Gather Shot By One Band
+    page: 201
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 30.13
+      - 13.6
+    B2:
+      color: yellow
+      position:
+      - 28.13
+      - 14.12
+    B3:
+      color: red
+      position:
+      - 38.73
+      - 10.1
+  ghost_ball:
+    position:
+    - 28.92
+    - 14.03
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 29.28
+      - 14.59
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.88
+      - 78.77
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.1
+      - 77.05
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.44
+      - 11.59
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.78
+      - 9.9
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.94
+      - 3.07
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The cue ball and the ball 2 are
+
+      one ball apart.
+
+      At this point, the gather shot area is not in the corner. It''s been moved to
+      make the point
+
+      easier. This way, the ball 2 can move into the corner without causing any unfortunate
+      back
+
+      touch-move. In addition, during the point, the cue ball pushes the ball 3 towards
+      the
+
+      If the ball 3 is in the corner, the difficulty is much greater. In order to
+      avoid the hit of the 2
+
+      ball, it is then necessary to better control its force and leave it a little
+      before the corner.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

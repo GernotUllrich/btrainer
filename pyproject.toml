@@ -29,3 +29,4 @@ dev = [
 
 [project.scripts]
 btrainer-capture = "src.tools.capture_scene:app"
+btrainer-visualize = "src.tools.visualize_scene:app"

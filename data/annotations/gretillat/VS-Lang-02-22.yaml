@@ -1,0 +1,129 @@
+scene:
+  id: VS-Lang-02-22
+  title: Versammlungsstoß – Direct Point – Four-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.22 Direct Point – Four-Bands Gather Shot
+    page: 207
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 36.44
+      - 50.0
+    B2:
+      color: yellow
+      position:
+      - 30.7
+      - 40.46
+    B3:
+      color: red
+      position:
+      - 2.16
+      - 2.6
+  ghost_ball:
+    position:
+    - 30.85
+    - 41.5
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque plein
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque plein'
+    - 'Hauteur d’attaque: demi-coulé'
+    - 'Effet: un peu d’effet à gauche'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 30.98
+      - 41.55
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.88
+      - 3.66
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 9.72
+      - 1.15
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.65
+      - 18.47
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.05
+      - 78.83
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.46
+      - 68.13
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.07
+      - 6.94
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'This point is on the verge of being classified as difficult.
+      To execute it correctly, you have
+
+      to play hard to make the ball 2 come in and at the same time cushion the cue
+      ball so that it
+
+      hits the ball 3 gently. In order to dampen despite the high force, it is necessary
+      to adjust
+
+      the height of attack to the millimeter, leaving practically no place for error.
+      Moreover, the
+
+      amount of ball is also quite difficult to play, because the rather high force
+      amplifies the
+
+      slightest error.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

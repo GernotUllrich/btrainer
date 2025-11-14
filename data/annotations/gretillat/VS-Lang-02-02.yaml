@@ -1,0 +1,102 @@
+scene:
+  id: VS-Lang-02-02
+  title: Versammlungsstoß – Direktpunkt über eine Bande (Variante)
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.2 Direct point – Gather shot by One Band
+    page: 186
+  difficulty: easy
+  description: Variante des Einband-Versammlungsstoßes mit halber Ballmenge und kontrolliertem
+    Durchstoß.
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 9.81
+      - -0.11
+    B2:
+      color: yellow
+      position:
+      - -0.19
+      - 25.11
+    B3:
+      color: red
+      position:
+      - 39.0
+      - 75.66
+  ghost_ball:
+    position:
+    - 0.34
+    - 24.43
+    notes: Ghost Ball für 1/2-Ball-Treffpunkt.
+  ball_contact:
+    fraction: 0.5
+    label: 1/2-voll
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: coulé
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - Durchstoß (coulé) für kontrollierte Laufbahn.
+  tempo_force:
+    tempo: 2
+    force: 3
+    comments: fort × vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 2.03
+      - 24.04
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.12
+      - 75.18
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 35.34
+      - 74.97
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Quantité de bille: 1/2 bille. Hauteur d’attaque: coulé. Effet:
+      sans effet.
+
+      Energie: fort - vitesse normale. Le point dépend surtout de la juste
+
+      quantité de bille et du léger avantage de la bille 1 sur la bille 2.
+
+      '
+    de_summary: 'Halber Ball mit Durchstoß ohne Effet. Wichtig ist der präzise Treffpunkt,
+
+      damit B1 leicht vor B2 bleibt und die Bälle kontrolliert in Richtung Ecke
+
+      laufen.
+
+      '
+  remarks:
+  - Vorsicht vor Rückläufer, B1 muss minimal vor B2 bleiben.
+  - Kraft kann bei langsamem Material leicht reduziert werden.

@@ -1,0 +1,125 @@
+scene:
+  id: VS-Lang-02-06
+  title: Versammlungsstoß – Dreiband-Variante mit Rechts-Effet
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.6 Direct point – Three-bands gather shot
+    page: 190
+  difficulty: easy
+  description: 'Dritter Basisstoß: B1 führt mit Rechts-Effet über drei Banden, B2
+    rollt eng entlang der langen Bande.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.8
+      - 9.79
+    B2:
+      color: yellow
+      position:
+      - 36.04
+      - 19.64
+    B3:
+      color: red
+      position:
+      - 37.51
+      - 0.36
+  ghost_ball:
+    position:
+    - 35.41
+    - 19.02
+    notes: Ghost Ball für 3/4-Ball-Einwirkung.
+  ball_contact:
+    fraction: 0.75
+    label: 3/4-voll
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: mid_low
+    effect_stage: stage_2
+    effect_side: right
+    cue_inclination_deg: 0.0
+    notes:
+    - Rechts-Effet sauber dosieren, damit B1 nach drei Banden auf B3 zurückkehrt.
+  tempo_force:
+    tempo: 2
+    force: 3
+    comments: fort × vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 34.67
+      - 18.64
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.09
+      - 3.36
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 39.38
+      - 26.69
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 9.6
+      - 78.96
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.64
+      - 64.05
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.59
+      - 6.32
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Quantité de bille: 3/4 de bille. Hauteur d’attaque: mi-basse.
+      Effet: à droite.
+
+      Energie: fort - vitesse normale. Le débutant a du mal à visualiser la trajectoire
+
+      de la bille 2 qui longe la bande longue, surtout quand elle est très proche
+      du
+
+      caoutchouc.
+
+      '
+    de_summary: 'Dreiviertel Ball bei leicht unterer Stoßhöhe und Rechts-Effet. B2
+      läuft eng an der
+
+      langen Bande entlang, während B1 über drei Banden zurück zu B3 findet. Je näher
+      B2 an
+
+      der Bande liegt, desto heikler wird der Rückweg von B1.
+
+      '
+  remarks:
+  - Für Einsteiger anspruchsvoll, weil die Bahn von B2 schwer abzuschätzen ist.
+  - Liegt B2 direkt an der Bande, braucht B1 besonders viel Effet für den Rückweg.

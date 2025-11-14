@@ -1,0 +1,141 @@
+scene:
+  id: VS-Lang-02-26
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.26 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 211
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 4.19
+      - 5.8
+    B2:
+      color: yellow
+      position:
+      - 2.53
+      - 9.14
+    B3:
+      color: red
+      position:
+      - 2.44
+      - 76.4
+  ghost_ball:
+    position:
+    - 4.1
+    - 8.4
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d’attaque: très bas'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 3.88
+      - 8.27
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 8.07
+      - 18.93
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 14.57
+      - 29.28
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 22.6
+      - 36.85
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.45
+      - 42.64
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.78
+      - 47.57
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.27
+      - 75.96
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.83
+      - 10.75
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.87
+      - 45.53
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 8.59
+      - 78.25
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The amount of ball is the amount needed to gather shot ball
+      2. The very low attacking
+
+      height and the fast speed are necessary to correct the trajectory of the cue
+      ball by
+
+      impregnating it with a curve. It is the control of this curve that represents
+      the difficulty of
+
+      this gather shot.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

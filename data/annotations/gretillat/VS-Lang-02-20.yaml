@@ -1,0 +1,104 @@
+scene:
+  id: VS-Lang-02-20
+  title: Versammlungsstoß – Direct Point – Two-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.20 Direct Point – Two-Bands Gather Shot
+    page: 205
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 6.67
+      - 76.58
+    B2:
+      color: yellow
+      position:
+      - 9.21
+      - 79.76
+    B3:
+      color: red
+      position:
+      - 0.93
+      - 2.13
+  ghost_ball:
+    position:
+    - 8.27
+    - 78.59
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 8.9
+      - 77.67
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.51
+      - 4.69
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 38.37
+      - 50.09
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.7
+      - 6.49
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The cue ball must be against the ball 2, but slightly, so that
+      the cue ball is not blocked at
+
+      the small cushion, but instead returns to the gather shot zone.
+
+      The only difficulty remains the quantity of ball (about 2/3 of the ball), this
+      parameter
+
+      leaving almost no place for error.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

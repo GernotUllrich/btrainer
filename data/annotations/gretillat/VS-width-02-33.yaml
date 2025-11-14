@@ -1,0 +1,75 @@
+scene:
+  id: VS-width-02-33
+  title: 2.33. DIRECT POINT – DIRECT GATHER SHOT – MASSÉ
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: Width Gather Shots
+    page: 271 oben
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 0.0
+      - 0.0
+    B2:
+      color: yellow
+      position:
+      - 0.0
+      - 0.0
+    B3:
+      color: red
+      position:
+      - 0.0
+      - 0.0
+  ghost_ball:
+    position:
+    - 0.0
+    - 0.0
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: pending
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d''attaque: au-dessus du centre'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: faible - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: pending
+  trajectory:
+    B1: []
+    B2: []
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: Balls 1 and 2 are so close together that it is almost impossible to follow with the flat tail.
+      With massé, it is possible to get around ball 2 and still take it into the gather zone. 
+      Apart from the amount of ball, all other parameters determine the rotations of ball 1 
+      that allow it to curve its trajectory and get around ball 2.
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

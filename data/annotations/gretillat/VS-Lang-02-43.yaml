@@ -1,0 +1,131 @@
+scene:
+  id: VS-Lang-02-43
+  title: Versammlungsstoß – Indirect Point By Three Bands – Return By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.43 Indirect Point By Three Bands – Return By Two Bands
+    page: 228
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 5.45
+      - 40.0
+    B2:
+      color: yellow
+      position:
+      - 5.41
+      - 50.0
+    B3:
+      color: red
+      position:
+      - 2.76
+      - 3.29
+  ghost_ball:
+    position:
+    - 5.44
+    - 48.7
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: effet à droite'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 5.44
+      - 48.7
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.96
+      - 51.98
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 17.58
+      - 79.06
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.56
+      - 61.65
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.51
+      - 4.3
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 23.39
+      - 79.28
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.69
+      - 53.38
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 9.84
+      - 4.26
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'l r 3: Fort
+
+      The difficulty of this gather shot is the back touch of the ball 2 after the
+      first two rails of
+
+      the cue ball. It is then necessary to adjust the parameters of the quantity
+      of ball and the
+
+      attack height by a few small adjustments, so that the trajectories of the two
+      balls do not
+
+      back touch each other.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

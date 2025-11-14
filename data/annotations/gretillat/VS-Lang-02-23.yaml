@@ -1,0 +1,113 @@
+scene:
+  id: VS-Lang-02-23
+  title: Versammlungsstoß – Direct Point – Four-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.23 Direct Point – Four-Bands Gather Shot
+    page: 208
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 32.55
+      - 10.04
+    B2:
+      color: yellow
+      position:
+      - 40.24
+      - 19.81
+    B3:
+      color: red
+      position:
+      - 39.54
+      - 0.49
+  ghost_ball:
+    position:
+    - 39.98
+    - 18.37
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 3/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 3/4 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: sans effet'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 38.54
+      - 18.12
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.13
+      - 2.36
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 6.69
+      - 78.9
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.51
+      - 71.44
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.96
+      - 4.32
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The difficulty lies in the height of attack, which must be
+      hit perfectly to the millimeter.
+
+      Because with the high energy transmitted to the cue ball and the large distance
+      between
+
+      the ball 2 and the ball 3, the error on the attacking height is no longer allowed.
+      This gather
+
+      shot therefore requires a perfect gesture which, in spite of a high energy transmission,
+
+      allows a perfect ball touch.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

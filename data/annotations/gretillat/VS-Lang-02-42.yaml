@@ -1,0 +1,133 @@
+scene:
+  id: VS-Lang-02-42
+  title: Versammlungsstoß – Indirect Point By Three Bands – Return By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.42 Indirect Point By Three Bands – Return By Two Bands
+    page: 227
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.67
+      - 2.37
+    B2:
+      color: yellow
+      position:
+      - 20.0
+      - 7.07
+    B3:
+      color: red
+      position:
+      - 37.88
+      - 1.49
+  ghost_ball:
+    position:
+    - 20.3
+    - 5.95
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 20.77
+      - 5.88
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.47
+      - 0.31
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.06
+      - 2.2
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 12.74
+      - 0.57
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.42
+      - 1.84
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.23
+      - 68.73
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.91
+      - 79.16
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.0
+      - 6.27
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The difficulty is the right balance between the amount of left
+      spin and the height of attack.
+
+      This last parameter will determine the point of contact between the cue ball
+      and the rail.
+
+      The closer the point hit on the rail is to the corner, the less effect it will
+      take for ball 1 to
+
+      collide with ball 3. The farther from the corner, the more effect the player
+      ball will need.
+
+      The third band for ball 1 is not necessary, the point is also feasible in two
+      bands.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

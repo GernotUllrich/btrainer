@@ -1,0 +1,135 @@
+scene:
+  id: VS-Lang-02-63
+  title: Versammlungsstoß – Indirect Point By Four Bands – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.63 Indirect Point By Four Bands – Gather Shot By Two Bands
+    page: 248
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 2.69
+      - 30.0
+    B2:
+      color: yellow
+      position:
+      - 2.61
+      - 40.0
+    B3:
+      color: red
+      position:
+      - 6.48
+      - 2.88
+  ghost_ball:
+    position:
+    - 1.5
+    - 38.77
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: beaucoup d’effet à droite'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 0.85
+      - 36.58
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.55
+      - 38.73
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.93
+      - 40.14
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 20.02
+      - 78.59
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.57
+      - 64.6
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 7.01
+      - 4.13
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 33.47
+      - 78.71
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.41
+      - 71.94
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.34
+      - 7.99
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'This point is difficult, simply because the cue ball first
+      touches the long cushion before
+
+      touching the ball 2. The amount of ball is therefore particularly difficult
+      to hit and
+
+      therefore the trajectory after ball 2 is random. The ball 3 may possibly be
+      moved a little
+
+      depending on the return of the cue ball.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -1,0 +1,129 @@
+scene:
+  id: VS-Lang-02-44
+  title: Versammlungsstoß – Indirect Point By Three Bands – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.44 Indirect Point By Three Bands – Gather Shot By Two Bands
+    page: 229
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 25.86
+      - 50.0
+    B2:
+      color: yellow
+      position:
+      - 38.05
+      - 47.4
+    B3:
+      color: red
+      position:
+      - 32.2
+      - 23.65
+  ghost_ball:
+    position:
+    - 21.98
+    - 40.45
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: effet à gauche'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 21.83
+      - 40.81
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 25.98
+      - 1.71
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.94
+      - 60.11
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.02
+      - 78.97
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.58
+      - 8.63
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.17
+      - 34.85
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.87
+      - 21.66
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.39
+      - 4.65
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'It is possible that the ball 2 will arrive in the return zone
+      before the cue ball, so there is a
+
+      risk of collision with the cue ball or the ball 3. To avoid this risk, it is
+      advisable to move
+
+      the 3 ball from the corner to the location drawn above. Thus, ball 2 has all
+      the necessary
+
+      space between ball 3 and the small band to travel, without causing a back touch.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

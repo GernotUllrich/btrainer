@@ -1,0 +1,132 @@
+scene:
+  id: VS-Lang-02-24
+  title: Versammlungsstoß – Direct Point – Five-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.24 Direct Point – Five-Bands Gather Shot
+    page: 209
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 36.66
+      - 15.16
+    B2:
+      color: yellow
+      position:
+      - 39.22
+      - 9.74
+    B3:
+      color: red
+      position:
+      - 4.7
+      - 1.59
+  ghost_ball:
+    position:
+    - 38.09
+    - 11.61
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 3/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 3/4 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: un peu d’effet à droite'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 38.14
+      - 11.43
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.91
+      - 2.15
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 31.39
+      - 1.1
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.06
+      - 37.31
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 28.87
+      - 79.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.95
+      - 63.42
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.79
+      - 6.52
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      This point can be played directly as well as by a cushion. In this, the effect
+      on the right
+
+      increases the margin of error a little. The essential difficulty of this point
+      is the position of
+
+      the body which is not obvious to place and which sometimes causes a lack of
+      stability and
+
+      a vision which is not perfect. You really have to take the time to position
+      yourself
+
+      properly, in front of the cue ball, even if it means putting your right leg
+      on the table. Once
+
+      again, the high force given to the cue ball increases the slightest error in
+      the attacking'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

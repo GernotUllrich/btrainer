@@ -1,0 +1,135 @@
+scene:
+  id: VS-Lang-02-61
+  title: Versammlungsstoß – Indirect Point By Four Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.61 Indirect Point By Four Bands – Gather Shot By One Band
+    page: 246
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 4.43
+      - 19.36
+    B2:
+      color: yellow
+      position:
+      - 0.0
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 37.86
+      - 77.34
+  ghost_ball:
+    position:
+    - 1.75
+    - 18.69
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: fine
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: fine'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: sans effet'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 1.75
+      - 18.69
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.11
+      - 18.09
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.86
+      - 1.19
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.66
+      - 5.21
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.99
+      - 35.11
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.94
+      - 76.51
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.43
+      - 21.71
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.14
+      - 77.58
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Ball 1 is distant from two balls
+
+      of the long cushion.
+
+      Although the amount of ball is indicated as fine, it is still necessary to find
+      the right ball
+
+      touch, within a few millimeters, to direct ball 2 into the gather shot zone.
+
+      For the other parameters, at the center with no effect should be appropriate.
+      However,
+
+      depending on the material, it may be necessary to take a millimeter lower or
+      give a little
+
+      effect to the right.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

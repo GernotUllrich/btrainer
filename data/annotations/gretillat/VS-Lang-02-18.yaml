@@ -1,0 +1,114 @@
+scene:
+  id: VS-Lang-02-18
+  title: Versammlungsstoß – Indirect Point By Two Bands – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.18 Indirect Point By Two Bands – Gather Shot By Three Bands
+    page: 203
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.94
+      - 40.29
+    B2:
+      color: yellow
+      position:
+      - 0.55
+      - 49.89
+    B3:
+      color: red
+      position:
+      - 1.88
+      - 1.69
+  ghost_ball:
+    position:
+    - 1.31
+    - 48.6
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: pending
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - TODO – ergänzen
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: pending
+  trajectory:
+    B1:
+    - point:
+      - 2.11
+      - 48.8
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.17
+      - 47.56
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.31
+      - 24.69
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.66
+      - 3.09
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 25.45
+      - 78.99
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.48
+      - 62.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.29
+      - 8.15
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'This is not really a difficult point. Just a few small adjustments
+      to the above parameters
+
+      are needed to get the ball playing in the right direction after the first Band.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

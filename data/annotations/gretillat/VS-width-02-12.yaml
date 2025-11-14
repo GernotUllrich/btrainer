@@ -1,0 +1,75 @@
+scene:
+  id: VS-width-02-12
+  title: Width Gather Shot – Szene 12
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: Width Gather Shots
+    page: 260 unten
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 0.0
+      - 0.0
+    B2:
+      color: yellow
+      position:
+      - 0.0
+      - 0.0
+    B3:
+      color: red
+      position:
+      - 0.0
+      - 0.0
+  ghost_ball:
+    position:
+    - 0.0
+    - 0.0
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: pending
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque pleine'
+    - 'Hauteur d''attaque: demi rétro'
+    - 'Effet: effet à droite'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: pending
+  trajectory:
+    B1: []
+    B2: []
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: Without a curved piqué, it is impossible to gather shot the ball 2 in a single band. 
+      You have to take almost full and play hard enough for the ball 2 to double back and forth. 
+      The effect on the right helps the ball 2 back into the corner. There is a risk of back touch, 
+      but ball 1 must pass before ball 2. The attacking height is the height that allows ball 1 to move to ball 3.
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

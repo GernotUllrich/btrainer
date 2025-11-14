@@ -1,0 +1,124 @@
+scene:
+  id: VS-Lang-02-56
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.56 Indirect Point By One Band – Gather Shot By Three Bands
+    page: 241
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 37.66
+      - 10.0
+    B2:
+      color: yellow
+      position:
+      - 40.0
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 3.18
+      - 1.88
+  ghost_ball:
+    position:
+    - 39.72
+    - 17.75
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque plein
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque plein'
+    - 'Hauteur d’attaque: au-dessous du centre'
+    - 'Effet: effet à droite'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 39.68
+      - 17.88
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.7
+      - 1.88
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 33.15
+      - 78.8
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 24.25
+      - 1.27
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 15.36
+      - 78.93
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 6.29
+      - 7.11
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      Everything is difficult at this point. The hardest part is to take the right
+      amount of ball,
+
+      which is practically full, and to play very hard while being very precise in
+      the ball hit. The
+
+      final difficulty is the enormous risk of wrong back touch between cue ball and
+      ball 2. If all
+
+      is well executed, the ball 2 goes just before the cue ball.
+
+      It is obvious that this gather shot is so difficult, that it is good to know
+      and work on it, but
+
+      in practice it represents far too great a risk.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

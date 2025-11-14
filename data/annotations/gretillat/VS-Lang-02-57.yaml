@@ -1,0 +1,128 @@
+scene:
+  id: VS-Lang-02-57
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.57 Indirect Point By One Band – Gather Shot By Three Bands
+    page: 242
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.67
+      - 23.19
+    B2:
+      color: yellow
+      position:
+      - 13.33
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 37.45
+      - 2.15
+  ghost_ball:
+    position:
+    - 15.09
+    - 21.05
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque plein
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque plein'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 15.09
+      - 20.93
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.91
+      - 19.86
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.17
+      - 2.98
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.72
+      - 16.33
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.25
+      - 11.24
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.95
+      - 6.32
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.1
+      - 1.99
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      The quantity of ball is almost full, on the left of ball 2. The force transmitted
+      to it must be
+
+      very large for it to be able to enter the return zone. The large amount of rotation
+      due to the
+
+      left-side spin and the follow allows the player ball to move to the ball 3.
+      As for the
+
+      consequent risk of back touch, the ball 2 should normally collide with the first
+      two rails
+
+      and still pass before the cue ball.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

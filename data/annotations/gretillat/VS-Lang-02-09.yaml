@@ -1,0 +1,122 @@
+scene:
+  id: VS-Lang-02-09
+  title: Versammlungsstoß – Direct Point – Four-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.9 Direct Point – Four-Bands Gather Shot
+    page: 193
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 29.44
+      - 9.69
+    B2:
+      color: yellow
+      position:
+      - 20.07
+      - -0.0
+    B3:
+      color: red
+      position:
+      - 2.49
+      - 0.52
+  ghost_ball:
+    position:
+    - 20.74
+    - 0.72
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque plein
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque plein'
+    - 'Hauteur d’attaque: au-dessus du centre'
+    - 'Effet: un peu d’effet à gauche'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 21.18
+      - 1.95
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.21
+      - 1.8
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.12
+      - 25.25
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 32.11
+      - 78.81
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.34
+      - 71.06
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.14
+      - 5.0
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'With an almost full amount of ball, this point has only one
+      essential difficulty: the
+
+      attacking height which leaves a very small margin of error.
+
+      This gather shot can also be played by colliding the almost full ball 2, but
+      on its left side.
+
+      It is then necessary to take a very high attacking height, without effect and
+      with an energy
+
+      similar to the standard solution. With its follow rotation, the cue ball touches
+      the small
+
+      band and runs along it to ball 3.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

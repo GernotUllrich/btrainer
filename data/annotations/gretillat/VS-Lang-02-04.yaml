@@ -1,0 +1,117 @@
+scene:
+  id: VS-Lang-02-04
+  title: Versammlungsstoß – Zweiband-Variante mit langem Durchzug
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.4 Direct point – Two-bands gather shot
+    page: 188
+  difficulty: easy
+  description: Variante des Zweiband-Sammelstoßes mit dreiviertel Ball und sehr tiefem
+    Durchzug.
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 18.34
+      - 57.25
+    B2:
+      color: yellow
+      position:
+      - 19.56
+      - 59.3
+    B3:
+      color: red
+      position:
+      - 0.79
+      - 0.88
+  ghost_ball:
+    position:
+    - 18.98
+    - 58.45
+    notes: Ghost Ball markiert 3/4-Ball-Anspiel.
+  ball_contact:
+    fraction: 0.75
+    label: 3/4-voll
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: very_low
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - Extrem tiefer Durchstoß für maximalen Zug über zwei Banden.
+  tempo_force:
+    tempo: 4
+    force: 3
+    comments: fort × vitesse très rapide
+  trajectory:
+    B1:
+    - point:
+      - 19.07
+      - 58.5
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.07
+      - 2.84
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 36.0
+      - 79.03
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.07
+      - 73.77
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.53
+      - 5.08
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Quantité de bille: 3/4 de bille. Hauteur d’attaque: très basse.
+      Effet: aucun.
+
+      Energie: fort - vitesse très rapide. La longueur du rétro reste maîtrisable
+      mais
+
+      devient délicate si la distance entre les billes 1 et 2 diminue.
+
+      '
+    de_summary: 'Dreiviertelvoll mit extrem tiefem Stoß und sehr hoher Armgeschwindigkeit.
+      Der lange
+
+      Zug hält B1 über zwei Banden auf Kurs, B2 wird in die Ecke begleitet. Sinkt
+      der
+
+      Abstand zwischen B1 und B2, steigt die Schwierigkeit deutlich.
+
+      '
+  remarks:
+  - Geschwindigkeit hoch halten, damit der Rückläufer lang genug wird.
+  - Bei kürzerem Abstand B1–B2 den Treffpunkt minimal anpassen.

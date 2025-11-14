@@ -1,0 +1,117 @@
+scene:
+  id: VS-Lang-02-15
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.15 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 199
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 18.61
+      - 76.3
+    B2:
+      color: yellow
+      position:
+      - 13.71
+      - 78.34
+    B3:
+      color: red
+      position:
+      - 37.6
+      - 0.42
+  ghost_ball:
+    position:
+    - 14.16
+    - 77.16
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 14.31
+      - 75.58
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.81
+      - 64.19
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.36
+      - 3.1
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 11.54
+      - 79.03
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.27
+      - 70.75
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.32
+      - 7.13
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'It is also possible to play this gather shot without effect.
+      But in this case, the trajectories of
+
+      balls 1 and 2 are very close and the risks of wrong collision are greater. With
+      a little right
+
+      spin, the cue ball has a slightly faster race than the ball 2, which allows
+      it to have a lead
+
+      time in its trajectory.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

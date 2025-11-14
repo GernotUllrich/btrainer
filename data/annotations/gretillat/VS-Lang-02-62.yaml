@@ -1,0 +1,140 @@
+scene:
+  id: VS-Lang-02-62
+  title: Versammlungsstoß – Indirect Point By Four Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.62 Indirect Point By Four Bands – Gather Shot By One Band
+    page: 247
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 39.78
+      - 12.42
+    B2:
+      color: yellow
+      position:
+      - 37.59
+      - 10.0
+    B3:
+      color: red
+      position:
+      - 37.59
+      - 78.05
+  ghost_ball:
+    position:
+    - 37.3
+    - 12.11
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque fine
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque fine'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: effet à gauche'
+    - 'Energie: très fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 37.26
+      - 12.11
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.1
+      - 9.14
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 25.86
+      - 1.35
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.15
+      - 5.38
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.98
+      - 37.96
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.06
+      - 77.27
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 37.8
+      - 1.1
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.53
+      - 74.21
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.45
+      - 60.39
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      The force of the cue ball is large enough to cause some uncertainty in the reaction
+      of the
+
+      effect on the first rail. All other parameters being more or less fixed, the
+      effect is the only
+
+      parameter of this gather shot to be modified to make the point feasible.
+
+      The trajectories of balls 1 and 2 cross each other and there is a risk of a
+      collision. To play
+
+      the point correctly, the ball 2 must pass just before the cue ball. The cueball
+      arrives first on'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

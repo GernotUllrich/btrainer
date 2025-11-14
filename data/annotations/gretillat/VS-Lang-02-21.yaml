@@ -1,0 +1,119 @@
+scene:
+  id: VS-Lang-02-21
+  title: Versammlungsstoß – Direct Point – Three-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.21 Direct Point – Three-Bands Gather Shot
+    page: 206
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 32.7
+      - 10.0
+    B2:
+      color: yellow
+      position:
+      - 40.22
+      - 19.76
+    B3:
+      color: red
+      position:
+      - 39.77
+      - 0.64
+  ghost_ball:
+    position:
+    - 40.09
+    - 18.23
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 3/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 3/4 de bille'
+    - 'Hauteur d’attaque: basse'
+    - 'Effet: à droite'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 38.51
+      - 18.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.39
+      - 2.07
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 6.67
+      - 78.97
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.09
+      - 70.86
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.09
+      - 70.86
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.32
+      - 3.92
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'This gather shot is the same as basic gather shot number 1.6.
+      The difference is that ball 2
+
+      is glued to the band here and ball 3 to the corner. These two elements considerably
+      reduce
+
+      the possible margin of error. We must therefore be very precise.
+
+      In principle, the point is made direct. But it is also possible that the cue
+      ball hits the long
+
+      cushion before the ball 3.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

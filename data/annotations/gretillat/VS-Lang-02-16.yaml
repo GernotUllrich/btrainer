@@ -1,0 +1,123 @@
+scene:
+  id: VS-Lang-02-16
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.16 Indirect Point By One Band – Gather Shot By Three Bands
+    page: 200
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 30.56
+      - 20.02
+    B2:
+      color: yellow
+      position:
+      - 19.95
+      - 10.14
+    B3:
+      color: red
+      position:
+      - 37.73
+      - 0.74
+  ghost_ball:
+    position:
+    - 20.45
+    - 11.26
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille + un procédé
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille + un procédé'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 20.71
+      - 11.69
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.23
+      - 12.9
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.23
+      - 2.64
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 15.71
+      - 1.09
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.96
+      - 56.89
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 6.47
+      - 78.8
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.84
+      - 6.2
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'In this gather shot, the energy of the cue ball after the hit
+      of the ball 2 is reduced by
+
+      playing in the center and correcting the trajectory after the rail with left
+      spin. The point can
+
+      also be played without effect and higher, but the cue ball will have too much
+      energy to
+
+      collide with the ball 3.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -6,6 +6,8 @@ from typing import Iterable
 import yaml
 from sqlalchemy.orm import Session
 
+from sqlalchemy.orm import object_session
+
 from src.db import models
 from src.db.schemas import SceneModel
 
@@ -42,12 +44,22 @@ def upsert_scene(session: Session, scene_data: SceneModel) -> models.Scene:
 
     scene.title = scene_data.title
     scene.description = scene_data.description
-    scene.difficulty = scene_data.difficulty
+    scene.difficulty = scene_data.difficulty.value
     scene.source_work = scene_data.source.work
     scene.source_section = scene_data.source.section
-    scene.source_page = scene_data.source.page
+    # Extrahiere Seitennummer (kann String wie "270 oben" sein)
+    if scene_data.source.page is not None:
+        if isinstance(scene_data.source.page, int):
+            scene.source_page = scene_data.source.page
+        else:
+            # Extrahiere Zahl aus String
+            import re
+            match = re.search(r'\d+', str(scene_data.source.page))
+            scene.source_page = int(match.group()) if match else None
+    else:
+        scene.source_page = None
 
-    scene.table_variant = scene_data.table.variant
+    scene.table_variant = scene_data.table.variant.value
     scene.table_width_units = scene_data.table.size_units[0]
     scene.table_height_units = scene_data.table.size_units[1]
     scene.grid_resolution = scene_data.table.grid_resolution
@@ -56,13 +68,16 @@ def upsert_scene(session: Session, scene_data: SceneModel) -> models.Scene:
         metadata["text"] = scene_data.text.model_dump(mode="json")
     scene.metadata_json = metadata
 
+    session_ref = object_session(scene)
+
     scene.ball_positions.clear()
+    if session_ref is not None:
+        session_ref.flush()
     for name, payload in scene_data.balls.items():
-        ball_name = models.BallName(name)
         x, y = payload.position
         scene.ball_positions.append(
             models.BallPosition(
-                ball_name=ball_name,
+                ball_name=name,
                 color=payload.color,
                 x=x,
                 y=y,
@@ -74,7 +89,7 @@ def upsert_scene(session: Session, scene_data: SceneModel) -> models.Scene:
         gx, gy = scene_data.ghost_ball.position
         scene.ball_positions.append(
             models.BallPosition(
-                ball_name=models.BallName.GHOST,
+                ball_name=models.BallName.GHOST.value,
                 color="ghost",
                 x=gx,
                 y=gy,
@@ -86,8 +101,8 @@ def upsert_scene(session: Session, scene_data: SceneModel) -> models.Scene:
         if scene.cue_parameters is None:
             scene.cue_parameters = models.CueParameters()
         scene.cue_parameters.attack_height = scene_data.cue.attack_height
-        scene.cue_parameters.effect_stage = scene_data.cue.effect_stage
-        scene.cue_parameters.effect_side = scene_data.cue.effect_side
+        scene.cue_parameters.effect_stage = scene_data.cue.effect_stage.value
+        scene.cue_parameters.effect_side = scene_data.cue.effect_side.value
         scene.cue_parameters.cue_inclination_deg = scene_data.cue.cue_inclination_deg
         scene.cue_parameters.notes = "\n".join(scene_data.cue.notes or []) or None
     else:
@@ -104,16 +119,16 @@ def upsert_scene(session: Session, scene_data: SceneModel) -> models.Scene:
 
     scene.trajectory_segments.clear()
     for ball_key, segments in scene_data.trajectory.items():
-        ball_name = models.BallName(ball_key)
         for index, segment in enumerate(segments):
+            px, py = segment.point
             scene.trajectory_segments.append(
                 models.TrajectorySegment(
-                    ball_name=ball_name,
+                    ball_name=getattr(ball_key, "value", ball_key),
                     sequence_index=index,
-                    segment_type=segment.type,
-                    to_x=(segment.to or [None, None])[0],
-                    to_y=(segment.to or [None, None])[1],
-                    cushion=segment.cushion,
+                    path_type=segment.path_type,
+                    point_x=px,
+                    point_y=py,
+                    event_kind=segment.event,
                     notes=segment.notes,
                 )
             )

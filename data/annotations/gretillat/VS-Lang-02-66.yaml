@@ -1,0 +1,155 @@
+scene:
+  id: VS-Lang-02-66
+  title: Versammlungsstoß – Indirect Point By Five Bands – Gather Shot By Four Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.66 Indirect Point By Five Bands – Gather Shot By Four Bands
+    page: 251
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.67
+      - 19.26
+    B2:
+      color: yellow
+      position:
+      - 20.0
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 37.39
+      - 77.43
+  ghost_ball:
+    position:
+    - 21.86
+    - 20.82
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: beaucoup d’effet à droite'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 21.86
+      - 20.82
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.37
+      - 70.23
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.74
+      - 78.89
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.86
+      - 36.63
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 19.91
+      - 1.57
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.37
+      - 20.94
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.94
+      - 76.62
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.88
+      - 14.26
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.55
+      - 1.81
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.1
+      - 2.74
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.53
+      - 34.89
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.28
+      - 75.57
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      There are many difficulties. First of all, the important force transmitted to
+      balls 1 and 2,
+
+      which makes it difficult to control the trajectory of the cue ball before its
+      first stroke. Then
+
+      the amount of ball that really has to be perfect in order to give ball 2 the
+      right direction,
+
+      but without causing a wrong collision in the return zone.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

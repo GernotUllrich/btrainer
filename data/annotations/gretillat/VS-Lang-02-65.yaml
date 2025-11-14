@@ -1,0 +1,143 @@
+scene:
+  id: VS-Lang-02-65
+  title: Versammlungsstoß – Indirect Point By Five Bands – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.65 Indirect Point By Five Bands – Gather Shot By Two Bands
+    page: 250
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 5.3
+      - 60.0
+    B2:
+      color: yellow
+      position:
+      - 9.14
+      - 50.0
+    B3:
+      color: red
+      position:
+      - 37.18
+      - 2.68
+  ghost_ball:
+    position:
+    - 8.61
+    - 50.75
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 8.35
+      - 51.04
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.73
+      - 30.33
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 9.81
+      - 1.53
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.77
+      - 40.72
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 19.67
+      - 79.15
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.95
+      - 60.37
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.58
+      - 3.84
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 38.56
+      - 36.44
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.69
+      - 18.77
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 33.44
+      - 3.45
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'l r 4: Très fort
+
+      This point is quite difficult because of the force that makes the touch of the
+      ball 2 more
+
+      random. A good attacking height and maximum left spin are necessary to give
+      the right
+
+      direction to the player''s ball. You still have to pay attention to the back
+      touch of ball 2 if it
+
+      arrives in the return zone before ball 1.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

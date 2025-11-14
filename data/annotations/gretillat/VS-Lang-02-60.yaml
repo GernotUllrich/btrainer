@@ -1,0 +1,181 @@
+scene:
+  id: VS-Lang-02-60
+  title: Versammlungsstoß – Indirect Point By Four Bands – Direct Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.60 Indirect Point By Four Bands – Direct Gather Shot
+    page: 245
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 37.81
+      - 7.54
+    B2:
+      color: yellow
+      position:
+      - 0.73
+      - 0.0
+    B3:
+      color: red
+      position:
+      - 37.77
+      - 9.2
+  ghost_ball:
+    position:
+    - 2.34
+    - 1.42
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: très haute'
+    - 'Effet: effet à droite'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 2.14
+      - 1.46
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.75
+      - 4.1
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.77
+      - 7.62
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.18
+      - 13.73
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.77
+      - 17.82
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.08
+      - 21.18
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.81
+      - 32.48
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.97
+      - 43.13
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.81
+      - 51.43
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.92
+      - 62.98
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.95
+      - 79.13
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.24
+      - 10.74
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 34.63
+      - 4.95
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Ball 2 is glued to the two bands
+
+      in the corner.
+
+      2The gather shot is very difficult
+
+      and will undoubtedly require a
+
+      atte3mpts before it is successful.
+
+      Well 1done and with luck, this
+
+      gather shot even allows the
+
+      catch of A0merican position!
+
+      The repetition of the long cushion is variable. Three touches is the most frequent,
+      but
+
+      sometimes it is only two or, on the contrary, four. The amount of effect that
+      develops on
+
+      the small band varies depending on the condition of the material. The secret
+      to the gather
+
+      shot of ball 2 is the amount of ball that is located at ½ ball. If the quantity
+      of ball is too
+
+      full, ball 2 is too short and remains close to the small band. If it is too
+      thin, the ball 2 has
+
+      too much force and leaves the third of the billiard table.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

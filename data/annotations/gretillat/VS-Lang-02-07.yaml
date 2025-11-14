@@ -1,0 +1,122 @@
+scene:
+  id: VS-Lang-02-07
+  title: Versammlungsstoß – Direct Point – Three-Bands Gather Shot
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.7 Direct Point – Three-Bands Gather Shot
+    page: 191
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 28.92
+      - 12.47
+    B2:
+      color: yellow
+      position:
+      - 38.06
+      - 20.08
+    B3:
+      color: red
+      position:
+      - 38.22
+      - 1.31
+  ghost_ball:
+    position:
+    - 36.99
+    - 19.44
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 3/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 3/4 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: beaucoup d’effet à droite'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 36.21
+      - 18.85
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.17
+      - 3.52
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 39.25
+      - 22.45
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.17
+      - 68.45
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 8.43
+      - 79.17
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.2
+      - 7.1
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'To perform this gather shot in the traditional way, you would
+      have to hit the ball 2 less full
+
+      so that it hits the long band, then the short band and finally the long band
+      in order. By
+
+      touching this fine, the realization of the point becomes practically impossible.
+      That is why
+
+      this solution becomes easier.
+
+      Be careful, the material is a relatively determining element in this gather
+      shot, essentially
+
+      in the reaction of the opposite effect of ball 2 on the third band.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

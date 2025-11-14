@@ -45,9 +45,11 @@ tempo_force:
   comments: ""
 trajectory:
   B1:
-    - type: line
-      to: [TODO_X, TODO_Y]
-    # weitere Segmente
+    - point: [TODO_X, TODO_Y]
+      path_type: line  # line | curve
+      event: cushion_long  # optional, z. B. cushion_long, ball_B3, intermediate
+      notes: ""
+    # weitere Punkte
   B2: []
   B3: []
 text:

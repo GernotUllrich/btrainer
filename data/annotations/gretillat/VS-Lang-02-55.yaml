@@ -1,0 +1,161 @@
+scene:
+  id: VS-Lang-02-55
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.55 Indirect Point By One Band – Gather Shot By Three Bands
+    page: 240
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 20.0
+      - 12.23
+    B2:
+      color: yellow
+      position:
+      - 13.33
+      - 13.33
+    B3:
+      color: red
+      position:
+      - 37.32
+      - 77.84
+  ghost_ball:
+    position:
+    - 14.21
+    - 12.58
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: très basse'
+    - 'Effet: sans effet'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 15.05
+      - 12.65
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 11.69
+      - 1.73
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 10.77
+      - 4.68
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 10.29
+      - 8.43
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 10.65
+      - 13.16
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 13.13
+      - 24.2
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 18.46
+      - 38.65
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 27.51
+      - 58.2
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.04
+      - 76.84
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.08
+      - 19.18
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.16
+      - 36.9
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.76
+      - 54.66
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.28
+      - 76.84
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      The difficulty consists in provoking the curved trajectory of the cue ball.
+      The importance
+
+      of this curve depends on the height of attack and the energy transmitted, essentially
+      the
+
+      speed. The combination of these parameters results in the correct curve. As
+      for the amount
+
+      of ball, it is set to direct ball 2 into the return zone.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

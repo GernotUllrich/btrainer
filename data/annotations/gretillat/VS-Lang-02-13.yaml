@@ -1,0 +1,118 @@
+scene:
+  id: VS-Lang-02-13
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.13 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 197
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.59
+      - 10.59
+    B2:
+      color: yellow
+      position:
+      - 19.86
+      - 19.53
+    B3:
+      color: red
+      position:
+      - 12.62
+      - 0.0
+  ghost_ball:
+    position:
+    - 20.16
+    - 18.89
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: un peu d’effet à gauche'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 20.38
+      - 18.4
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.4
+      - 11.42
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 12.34
+      - 1.89
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 3.07
+      - 78.89
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.34
+      - 74.98
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 12.35
+      - 3.85
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'This gather shot is not complicated to execute, unless one
+      is looking for the precision of
+
+      all parameters, i.e. the perfect hit of ball 3 and the perfect measurements
+      of balls 1 and 2.
+
+      Given the position of ball 3 on the frame line, this point is especially valuable
+      in frame
+
+      games. This gather shot is also possible direct, without going through the long
+      band.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

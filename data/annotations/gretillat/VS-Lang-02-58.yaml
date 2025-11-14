@@ -1,0 +1,136 @@
+scene:
+  id: VS-Lang-02-58
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Four Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.58 Indirect Point By One Band – Gather Shot By Four Bands
+    page: 243
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 37.58
+      - 50.0
+    B2:
+      color: yellow
+      position:
+      - 26.67
+      - 60.0
+    B3:
+      color: red
+      position:
+      - 37.54
+      - 2.4
+  ghost_ball:
+    position:
+    - 27.88
+    - 59.96
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: rétro'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 28.29
+      - 59.51
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.86
+      - 79.26
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.54
+      - 3.56
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.26
+      - 72.17
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 16.4
+      - 79.42
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.58
+      - 68.87
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.22
+      - 45.73
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.54
+      - 6.31
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      The feedback and effect required to achieve this gather shot, combined with
+      the slight
+
+      inclination of the cue due to the proximity of the band and the large force
+      to be transmitted
+
+      to the balls, cause some uncertainty about the touch of ball 2.
+
+      The opposite effect regulates the energy of the cue ball after the band. Without
+      the
+
+      opposite effect and the resulting slowdown, the cue ball would collide too hard
+      with the
+
+      ball 3, which would leave the gather shot zone.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

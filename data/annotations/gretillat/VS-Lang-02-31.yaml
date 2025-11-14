@@ -1,0 +1,127 @@
+scene:
+  id: VS-Lang-02-31
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Four Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.31 Indirect Point By One Band – Gather Shot By Four Bands
+    page: 216
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.67
+      - 55.54
+    B2:
+      color: yellow
+      position:
+      - 40.0
+      - 60.0
+    B3:
+      color: red
+      position:
+      - 2.79
+      - 2.33
+  ghost_ball:
+    position:
+    - 37.93
+    - 59.09
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 3/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 3/4 de bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: un peu d’effet à droite'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 38.02
+      - 59.22
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.2
+      - 57.74
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.02
+      - 3.77
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 2.84
+      - 79.55
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.91
+      - 78.5
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.85
+      - 47.18
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 7.79
+      - 6.91
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The cue ball is located between
+
+      the 2nd and 3rd diamonds on
+
+      9 the frame line.
+
+      You have to play at least ¾ ball, maybe even a little bit fuller and especially
+      not higher
+
+      than the center of the ball. If the cue ball is attacked above the center, its
+      trajectory after
+
+      the rail will be curved and it will no longer go into the corner. The effect
+      is not essential.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

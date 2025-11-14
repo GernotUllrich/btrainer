@@ -1,0 +1,160 @@
+scene:
+  id: VS-Lang-02-64
+  title: Versammlungsstoß – Indirect Point By Four Bands – Gather Shot By Five Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.64 Indirect Point By Four Bands – Gather Shot By Five Bands
+    page: 249
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 4.73
+      - 30.86
+    B2:
+      color: yellow
+      position:
+      - 13.33
+      - 30.0
+    B3:
+      color: red
+      position:
+      - 2.98
+      - 3.11
+  ghost_ball:
+    position:
+    - 12.36
+    - 30.84
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: effet à droite'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 11.69
+      - 31.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.57
+      - 53.58
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.98
+      - 76.05
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.7
+      - 79.23
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.8
+      - 58.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.78
+      - 4.19
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 39.6
+      - 5.18
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.17
+      - 1.33
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.62
+      - 35.41
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.85
+      - 78.79
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.4
+      - 72.11
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.38
+      - 9.84
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r Ball 1 4 i : s T r h ès a l f f o rt a diamond away
+
+      from the short cushion.
+
+      It is the very large force to be transmitted that causes the most difficulty,
+      both in the ball
+
+      hit and in the choice of parameters. For the rest, it is certainly one of the
+      most difficult
+
+      patterns of all long gather shots.
+
+      Nevertheless, this is the only gather shot option on this position. But of course,
+      making the
+
+      point this way is so difficult that in practice the player will prefer to find
+      another waiting'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

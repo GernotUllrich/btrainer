@@ -1,0 +1,125 @@
+scene:
+  id: VS-Lang-02-28
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.28 Indirect Point By One Band – Gather Shot By Three Bands
+    page: 213
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 27.69
+      - 59.36
+    B2:
+      color: yellow
+      position:
+      - 12.25
+      - 50.92
+    B3:
+      color: red
+      position:
+      - 37.86
+      - 1.91
+  ghost_ball:
+    position:
+    - 13.6
+    - 51.69
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: pleine
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: pleine'
+    - 'Hauteur d’attaque: très haute'
+    - 'Effet: effet à gauche'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 13.9
+      - 51.69
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.95
+      - 44.6
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.56
+      - 2.9
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.99
+      - 44.43
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.63
+      - 29.67
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.01
+      - 14.53
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.2
+      - 2.2
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The quantity of ball is completely full. Up to the first band,
+      the trajectories of balls 1 and 2
+
+      are identical. After the first band, the cue ball develops its left effect to
+      go into the corner,
+
+      while the ball 2 develops the opposite effect and is slightly crushed on the
+      band due to the
+
+      high force.
+
+      The main difficulty is to hit the right amount of ball with a lot of spin.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

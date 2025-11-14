@@ -1,0 +1,121 @@
+scene:
+  id: VS-Lang-02-35
+  title: Versammlungsstoß – Indirect Point By Two Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.35 Indirect Point By Two Bands – Gather Shot By One Band
+    page: 220
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 4.44
+      - 55.24
+    B2:
+      color: yellow
+      position:
+      - 13.33
+      - 60.0
+    B3:
+      color: red
+      position:
+      - 37.66
+      - 2.15
+  ghost_ball:
+    position:
+    - 12.63
+    - 59.16
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: effet à droite'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 12.78
+      - 58.47
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.08
+      - 52.41
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.29
+      - 28.82
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.49
+      - 2.92
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 18.95
+      - 79.0
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.92
+      - 8.46
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The cue ball is halfway between
+
+      the two diamonds.
+
+      This requires a number of small adjustments. Starting with the amount of ball
+      needed to
+
+      gather ball 2. Then fine-tune the attacking height and amount of spin to the
+      right to direct
+
+      the player''s ball to the right spot. In principle, one or two attempts should
+      be sufficient to
+
+      successfully complete the gather shot.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -10,14 +10,16 @@ from src.db.models import (
     EffectSide,
     EffectStage,
     TableVariant,
-    TrajectoryType,
 )
 
 
 class SourceModel(BaseModel):
     work: str
     section: str | None = None
-    page: int | None = Field(default=None, ge=0)
+    page: int | str | None = Field(
+        default=None,
+        description="Seitenzahl als Integer (z.B. 270) oder String mit Position (z.B. '270 oben', '270 unten')"
+    )
 
 
 class TableModel(BaseModel):
@@ -78,12 +80,17 @@ class TempoForceModel(BaseModel):
     comments: str | None = None
 
 
-class TrajectorySegmentModel(BaseModel):
-    type: TrajectoryType
-    to: List[float] | None = None
-    position: List[float] | None = None
-    cushion: str | None = None
+class TrajectoryPointModel(BaseModel):
+    point: List[float]
+    path_type: Literal["line", "curve"] = "line"
+    event: str | None = None
     notes: str | None = None
+
+    @validator("point")
+    def validate_point(cls, value: List[float]) -> List[float]:
+        if len(value) != 2:
+            raise ValueError("trajectory point must contain [x, y]")
+        return value
 
 
 class TextBlockModel(BaseModel):
@@ -104,7 +111,7 @@ class SceneModel(BaseModel):
     ball_contact: BallContactModel | None = None
     cue: CueModel | None = None
     tempo_force: TempoForceModel | None = None
-    trajectory: Dict[str, List[TrajectorySegmentModel]] = Field(default_factory=dict)
+    trajectory: Dict[str, List[TrajectoryPointModel]] = Field(default_factory=dict)
     text: TextBlockModel | None = None
     remarks: List[str] = Field(default_factory=list)
 

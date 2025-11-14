@@ -1,0 +1,127 @@
+scene:
+  id: VS-Lang-02-12
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.12 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 196
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.84
+      - 10.64
+    B2:
+      color: yellow
+      position:
+      - 15.51
+      - 19.48
+    B3:
+      color: red
+      position:
+      - 38.2
+      - 0.62
+  ghost_ball:
+    position:
+    - 15.89
+    - 19.02
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: sans'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 16.56
+      - 18.29
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.69
+      - 13.65
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.27
+      - 2.4
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.11
+      - 67.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.33
+      - 78.91
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.41
+      - 5.56
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Ball 2 is placed on the starting
+
+      mark on the left side.
+
+      This is the fourth of the four basic gather shots that the neophyte must learn
+      in the
+
+      beginning. This indirect point allows the beginner to learn not only the gather
+      shot of ball
+
+      2, but also the reaction of ball 1 on the long band. In this example, it is
+      played without
+
+      effect and in the center, but it is also possible to play it as a follow with
+      effect on the left,
+
+      and sometimes even draw with opposite effect. It allows to test a little bit
+      the reaction
+
+      nuances of the balls on the band.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

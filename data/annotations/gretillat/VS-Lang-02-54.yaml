@@ -1,0 +1,114 @@
+scene:
+  id: VS-Lang-02-54
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.54 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 239
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 13.33
+      - 20.0
+    B2:
+      color: yellow
+      position:
+      - 30.0
+      - 79.19
+    B3:
+      color: red
+      position:
+      - 2.69
+      - 2.54
+  ghost_ball:
+    position:
+    - 28.72
+    - 78.03
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: rétro'
+    - 'Effet: un peu d’effet à droite'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 28.92
+      - 78.07
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 27.71
+      - 79.35
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.09
+      - 3.81
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 38.78
+      - 68.34
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.93
+      - 12.19
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'l r 3: Fort
+
+      The distance between balls 1 and 2 is important. The difficulty comes from the
+      natural
+
+      follow rotation that the player ball acquires until it collides with the ball
+      2. When these
+
+      two balls collide, it is imperative that the cue ball is without follow rotation,
+      or even a
+
+      little draw rotation. Reason why the parameters are draw, strong with a fast
+      speed.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

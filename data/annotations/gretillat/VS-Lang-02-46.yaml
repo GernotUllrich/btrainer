@@ -1,0 +1,127 @@
+scene:
+  id: VS-Lang-02-46
+  title: Versammlungsstoß – Indirect Point By Three Bands – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.46 Indirect Point By Three Bands – Gather Shot By Two Bands
+    page: 231
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 12.67
+      - 20.0
+    B2:
+      color: yellow
+      position:
+      - 26.67
+      - 20.0
+    B3:
+      color: red
+      position:
+      - 37.42
+      - 77.69
+  ghost_ball:
+    position:
+    - 25.29
+    - 18.84
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: effet à droite'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 25.25
+      - 18.84
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.22
+      - 9.58
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 28.76
+      - 0.19
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.04
+      - 23.56
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.63
+      - 76.38
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 39.35
+      - 26.97
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.35
+      - 47.76
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.56
+      - 75.5
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The difficulty lies in the division of forces between the cue
+      ball and the ball 2, so that the
+
+      ball 2 takes the direction of the gather shot zone and especially that it is
+      not there before
+
+      the cue ball. Otherwise, it''s the cons of the ball 2, either on the ball 3
+      or on the cue ball.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -20,19 +20,17 @@ depends_on = None
 
 
 def upgrade() -> None:
-    op.execute("CREATE EXTENSION IF NOT EXISTS pgcrypto")
-
     op.create_table(
         "scene",
-        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True, server_default=sa.text("gen_random_uuid()")),
+        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True),
         sa.Column("scene_key", sa.String(length=64), nullable=False, unique=True),
         sa.Column("title", sa.String(length=200), nullable=False),
         sa.Column("description", sa.Text(), nullable=True),
-        sa.Column("difficulty", sa.Enum("easy", "medium", "hard", name="difficulty"), nullable=False),
+        sa.Column("difficulty", sa.String(length=16), nullable=False),
         sa.Column("source_work", sa.String(length=200), nullable=False),
         sa.Column("source_section", sa.String(length=200), nullable=True),
         sa.Column("source_page", sa.Integer(), nullable=True),
-        sa.Column("table_variant", sa.Enum("match", "small_tournament", name="tablevariant"), nullable=False),
+        sa.Column("table_variant", sa.String(length=32), nullable=False),
         sa.Column("table_width_units", sa.Float(), nullable=False),
         sa.Column("table_height_units", sa.Float(), nullable=False),
         sa.Column("grid_resolution", sa.Float(), nullable=False),
@@ -45,7 +43,7 @@ def upgrade() -> None:
         "ball_position",
         sa.Column("id", sa.Integer(), primary_key=True, autoincrement=True),
         sa.Column("scene_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("scene.id", ondelete="CASCADE"), nullable=False),
-        sa.Column("ball_name", sa.Enum("B1", "B2", "B3", "GHOST", name="ballname"), nullable=False),
+        sa.Column("ball_name", sa.String(length=16), nullable=False),
         sa.Column("color", sa.String(length=32), nullable=False),
         sa.Column("x", sa.Float(), nullable=False),
         sa.Column("y", sa.Float(), nullable=False),
@@ -58,21 +56,8 @@ def upgrade() -> None:
         sa.Column("id", sa.Integer(), primary_key=True, autoincrement=True),
         sa.Column("scene_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("scene.id", ondelete="CASCADE"), nullable=False),
         sa.Column("attack_height", sa.String(length=50), nullable=True),
-        sa.Column(
-            "effect_stage",
-            sa.Enum(
-                "stage_0",
-                "stage_1",
-                "stage_2",
-                "stage_3",
-                "stage_4",
-                "stage_45_deg",
-                "stage_4_plus",
-                name="effectstage",
-            ),
-            nullable=False,
-        ),
-        sa.Column("effect_side", sa.Enum("none", "left", "right", name="effectside"), nullable=False, server_default="none"),
+        sa.Column("effect_stage", sa.String(length=32), nullable=False),
+        sa.Column("effect_side", sa.String(length=16), nullable=False, server_default="none"),
         sa.Column("cue_inclination_deg", sa.Float(), nullable=True),
         sa.Column("notes", sa.Text(), nullable=True),
         sa.UniqueConstraint("scene_id", name="uq_cue_parameters_scene"),
@@ -94,12 +79,12 @@ def upgrade() -> None:
         "trajectory_segment",
         sa.Column("id", sa.Integer(), primary_key=True, autoincrement=True),
         sa.Column("scene_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("scene.id", ondelete="CASCADE"), nullable=False),
-        sa.Column("ball_name", sa.Enum("B1", "B2", "B3", "GHOST", name="ballname"), nullable=False),
+        sa.Column("ball_name", sa.String(length=16), nullable=False),
         sa.Column("sequence_index", sa.Integer(), nullable=False),
-        sa.Column("segment_type", sa.Enum("line", "cushion", "stationary", name="trajectorytype"), nullable=False),
-        sa.Column("to_x", sa.Float(), nullable=True),
-        sa.Column("to_y", sa.Float(), nullable=True),
-        sa.Column("cushion", sa.String(length=16), nullable=True),
+        sa.Column("path_type", sa.String(length=16), nullable=False, server_default="line"),
+        sa.Column("point_x", sa.Float(), nullable=False),
+        sa.Column("point_y", sa.Float(), nullable=False),
+        sa.Column("event_kind", sa.String(length=64), nullable=True),
         sa.Column("notes", sa.Text(), nullable=True),
         sa.CheckConstraint("sequence_index >= 0", name="ck_segment_sequence_nonnegative"),
     )
@@ -136,9 +121,3 @@ def downgrade() -> None:
     op.drop_table("cue_parameters")
     op.drop_table("ball_position")
     op.drop_table("scene")
-    op.execute("DROP TYPE IF EXISTS difficulty")
-    op.execute("DROP TYPE IF EXISTS tablevariant")
-    op.execute("DROP TYPE IF EXISTS ballname")
-    op.execute("DROP TYPE IF EXISTS effectstage")
-    op.execute("DROP TYPE IF EXISTS effectside")
-    op.execute("DROP TYPE IF EXISTS trajectorytype")

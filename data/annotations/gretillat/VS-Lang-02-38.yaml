@@ -1,0 +1,131 @@
+scene:
+  id: VS-Lang-02-38
+  title: Versammlungsstoß – Indirect Point By Two Bands – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.38 Indirect Point By Two Bands – Gather Shot By Two Bands
+    page: 223
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 23.71
+      - 20.0
+    B2:
+      color: yellow
+      position:
+      - 20.0
+      - 2.43
+    B3:
+      color: red
+      position:
+      - 37.06
+      - 2.65
+  ghost_ball:
+    position:
+    - 19.45
+    - 5.01
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: en-dessous du centre'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 19.45
+      - 5.05
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 6.71
+      - 1.64
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.87
+      - 3.17
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.05
+      - 2.6
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 20.59
+      - 1.64
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.65
+      - 79.45
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.59
+      - 8.15
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'The cue ball is on the right tee-
+
+      The difficulty is to associate the point of impact of ball 1 on the small band
+      with the
+
+      amount of effect it will develop on the long cushion. The more the cue ball
+      touches the
+
+      small band near the corner, the less effect it needs. And vice versa. If ball
+      1 develops too
+
+      much effect, it can still make the point by colliding the small band a second
+      time. The
+
+      return of the ball 2 to the player''s position also constitutes a danger: one
+      must withdraw as
+
+      soon as the point is executed.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

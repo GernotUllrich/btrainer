@@ -1,0 +1,74 @@
+scene:
+  id: VS-width-02-22
+  title: 2.22. INDIRECT POINT BY ONE BAND – GATHER SHOT BY ONE BAND
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: Width Gather Shots
+    page: 265 unten
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 0.0
+      - 0.0
+    B2:
+      color: yellow
+      position:
+      - 0.0
+      - 0.0
+    B3:
+      color: red
+      position:
+      - 0.0
+      - 0.0
+  ghost_ball:
+    position:
+    - 0.0
+    - 0.0
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: pending
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d''attaque: rétro'
+    - 'Effet: sans effet'
+    - 'Energie: moyen - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: pending
+  trajectory:
+    B1: []
+    B2: []
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: The direct point with a ball 2 return by two cushions is not going very well. 
+      Ball 2 goes in a little over the gather area. Therefore, by gather ball 2 by a single band 
+      and executing the point indirectly, the return of ball 2 into the gather shot area is better.
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

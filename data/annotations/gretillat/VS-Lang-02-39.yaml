@@ -1,0 +1,129 @@
+scene:
+  id: VS-Lang-02-39
+  title: Versammlungsstoß – Indirect Point By Two Bands – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.39 Indirect Point By Two Bands – Gather Shot By Three Bands
+    page: 224
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 37.26
+      - 6.17
+    B2:
+      color: yellow
+      position:
+      - 30.0
+      - 0.0
+    B3:
+      color: red
+      position:
+      - 2.59
+      - 77.53
+  ghost_ball:
+    position:
+    - 31.95
+    - 1.66
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 31.9
+      - 1.74
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 32.59
+      - 1.1
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.02
+      - 5.71
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.4
+      - 76.33
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.96
+      - 14.57
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.68
+      - 38.27
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 6.15
+      - 74.71
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Although the realization of the point is not particularly difficult,
+      the trajectories of the
+
+      balls for a correct return are not so obvious to achieve. After the second rail
+      has touched ,
+
+      the cue ball crosses the trajectory of the ball 2. It is then necessary to avoid
+      that the two
+
+      balls back touch each other, notably by taking enough quantity of ball, then
+      putting a lot of
+
+      effect to the left to correct the direction of the cue ball. Thus, the cueball
+      will pass to the
+
+      fateful spot after ball 2.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

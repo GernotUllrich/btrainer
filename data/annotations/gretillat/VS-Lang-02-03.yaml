@@ -1,0 +1,117 @@
+scene:
+  id: VS-Lang-02-03
+  title: Versammlungsstoß – Direktpunkt über zwei Banden
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.3 Direct point – Two-bands gather shot
+    page: 187
+  difficulty: easy
+  description: 'Zweiter Basis-Versammlungsstoß: B1 zieht mit Rückläufer über zwei
+    Banden, B2 folgt kontrolliert in die Ecke.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 13.99
+      - 12.09
+    B2:
+      color: yellow
+      position:
+      - 12.6
+      - 19.71
+    B3:
+      color: red
+      position:
+      - 37.45
+      - 1.25
+  ghost_ball:
+    position:
+    - 13.04
+    - 19.13
+    notes: Ghost Ball für 2/3-Ball-Treffpunkt.
+  ball_contact:
+    fraction: 0.66
+    label: 2/3-voll
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: low
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - Tiefer Stoß mit zügigem Armzug für langen Rückläufer.
+  tempo_force:
+    tempo: 3
+    force: 3
+    comments: fort × vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 13.22
+      - 18.6
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.13
+      - 2.6
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 0.96
+      - 53.01
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 10.46
+      - 78.76
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.63
+      - 7.87
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Quantité de bille: 2/3 de bille. Hauteur d’attaque: basse.
+      Effet: aucun.
+
+      Energie: fort - vitesse normale. Cette position fait partie des quatre coups
+
+      de rassemblement de base. La longueur entre les billes 2 et 3 reste importante,
+
+      d’où la nécessité d’un bon rétro et d’une vitesse d’exécution assez rapide.
+
+      '
+    de_summary: 'Zwei-Drittel Ball voll und tief angespielt, ohne Effet. Der kräftige
+      Rückläufer bringt
+
+      B1 nach zwei Banden zurück, während B2 mitläuft. Entscheidend ist der schnelle
+
+      Armzug, damit B1 vor B2 bleibt und den Sammelpunkt erreicht.
+
+      '
+  remarks:
+  - Wird schwieriger, wenn B3 weiter aus der Ecke liegt oder die Abstände wachsen.
+  - Rückläufer je nach Material anpassen, damit B1 und B2 im Gleichlauf bleiben.

@@ -1,0 +1,126 @@
+scene:
+  id: VS-Lang-02-47
+  title: Versammlungsstoß – Indirect Point By Three Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.47 Indirect Point By Three Bands – Gather Shot By One Band
+    page: 232
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 10.0
+      - 40.0
+    B2:
+      color: yellow
+      position:
+      - 38.18
+      - 70.0
+    B3:
+      color: red
+      position:
+      - 37.66
+      - 13.33
+  ghost_ball:
+    position:
+    - 38.38
+    - 68.31
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/4 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/4 de bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: beaucoup d’effet à gauche'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 38.3
+      - 68.35
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.23
+      - 68.67
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 23.85
+      - 79.57
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.08
+      - 68.03
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.14
+      - 14.52
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 38.42
+      - 79.53
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.15
+      - 18.55
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'l r 3: Fort
+
+      Ball 2 is located half a ball from
+
+      The difficulty is to hit the right amount of ball, despite the amount of spin
+      on the left. This
+
+      amount of ball offers almost no margin of error for a successful gather shot.
+
+      Ball 3 is placed out of the corner at the height of the frame line. But the
+      gather shot area
+
+      could be in the corner, with a new table for example.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

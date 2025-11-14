@@ -1,0 +1,134 @@
+scene:
+  id: VS-Lang-02-32
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Four Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.32 Indirect Point By One Band – Gather Shot By Four Bands
+    page: 217
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 33.21
+      - 20.0
+    B2:
+      color: yellow
+      position:
+      - 30.0
+      - 13.33
+    B3:
+      color: red
+      position:
+      - 2.32
+      - 1.96
+  ghost_ball:
+    position:
+    - 30.86
+    - 14.3
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: effet à gauche'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 31.17
+      - 14.76
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.86
+      - 11.75
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.87
+      - 2.39
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 20.93
+      - 1.23
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 20.93
+      - 1.23
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.06
+      - 27.99
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 35.01
+      - 79.06
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.25
+      - 72.92
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.75
+      - 9.22
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'r 4: Très fort
+
+      No great difficulty in this gather shot, except perhaps the trajectory of the
+      cue ball after its
+
+      collision with the ball 2 and especially after the long cushion. Its direction
+      is made more
+
+      difficult to control because of the large amount of force required.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

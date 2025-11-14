@@ -16,19 +16,20 @@ from sqlalchemy import (
     UniqueConstraint,
     text,
 )
+import uuid
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from src.db.base import Base
 
 
-class Difficulty(enum.StrEnum):
+class Difficulty(enum.Enum):
     EASY = "easy"
     MEDIUM = "medium"
     HARD = "hard"
 
 
-class TableVariant(enum.StrEnum):
+class TableVariant(enum.Enum):
     MATCH = "match"
     SMALL_TOURNAMENT = "small_tournament"
 
@@ -40,13 +41,13 @@ class BallName(enum.StrEnum):
     GHOST = "GHOST"
 
 
-class EffectSide(enum.StrEnum):
+class EffectSide(enum.Enum):
     NONE = "none"
     LEFT = "left"
     RIGHT = "right"
 
 
-class EffectStage(enum.StrEnum):
+class EffectStage(enum.Enum):
     STAGE_0 = "stage_0"
     STAGE_1 = "stage_1"
     STAGE_2 = "stage_2"
@@ -56,30 +57,24 @@ class EffectStage(enum.StrEnum):
     STAGE_4_PLUS = "stage_4_plus"
 
 
-class TrajectoryType(enum.StrEnum):
-    LINE = "line"
-    CUSHION = "cushion"
-    STATIONARY = "stationary"
-
-
 class Scene(Base):
     __tablename__ = "scene"
 
     id: Mapped[UUID] = mapped_column(
         UUID(as_uuid=True),
         primary_key=True,
-        server_default=text("gen_random_uuid()"),
+        default=uuid.uuid4,
     )
     scene_key: Mapped[str] = mapped_column(String(64), unique=True, nullable=False)
     title: Mapped[str] = mapped_column(String(200), nullable=False)
     description: Mapped[Optional[str]] = mapped_column(Text())
-    difficulty: Mapped[Difficulty] = mapped_column(Enum(Difficulty), nullable=False)
+    difficulty: Mapped[str] = mapped_column(String(16), nullable=False)
 
     source_work: Mapped[str] = mapped_column(String(200), nullable=False)
     source_section: Mapped[Optional[str]] = mapped_column(String(200))
     source_page: Mapped[Optional[int]] = mapped_column(Integer())
 
-    table_variant: Mapped[TableVariant] = mapped_column(Enum(TableVariant), nullable=False)
+    table_variant: Mapped[str] = mapped_column(String(32), nullable=False)
     table_width_units: Mapped[float] = mapped_column(nullable=False)
     table_height_units: Mapped[float] = mapped_column(nullable=False)
     grid_resolution: Mapped[float] = mapped_column(nullable=False)
@@ -115,7 +110,7 @@ class BallPosition(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     scene_id: Mapped[UUID] = mapped_column(ForeignKey("scene.id", ondelete="CASCADE"), nullable=False)
-    ball_name: Mapped[BallName] = mapped_column(Enum(BallName), nullable=False)
+    ball_name: Mapped[str] = mapped_column(String(16), nullable=False)
     color: Mapped[str] = mapped_column(String(32), nullable=False)
     x: Mapped[float] = mapped_column(nullable=False)
     y: Mapped[float] = mapped_column(nullable=False)
@@ -130,8 +125,8 @@ class CueParameters(Base):
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     scene_id: Mapped[UUID] = mapped_column(ForeignKey("scene.id", ondelete="CASCADE"), unique=True)
     attack_height: Mapped[Optional[str]] = mapped_column(String(50))
-    effect_stage: Mapped[EffectStage] = mapped_column(Enum(EffectStage), nullable=False)
-    effect_side: Mapped[EffectSide] = mapped_column(Enum(EffectSide), nullable=False, default=EffectSide.NONE)
+    effect_stage: Mapped[str] = mapped_column(String(32), nullable=False)
+    effect_side: Mapped[str] = mapped_column(String(16), nullable=False, default=EffectSide.NONE.value)
     cue_inclination_deg: Mapped[Optional[float]] = mapped_column()
     notes: Mapped[Optional[str]] = mapped_column(Text())
 
@@ -158,12 +153,12 @@ class TrajectorySegment(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     scene_id: Mapped[UUID] = mapped_column(ForeignKey("scene.id", ondelete="CASCADE"), nullable=False)
-    ball_name: Mapped[BallName] = mapped_column(Enum(BallName), nullable=False)
+    ball_name: Mapped[str] = mapped_column(String(16), nullable=False)
     sequence_index: Mapped[int] = mapped_column(Integer(), nullable=False)
-    segment_type: Mapped[TrajectoryType] = mapped_column(Enum(TrajectoryType), nullable=False)
-    to_x: Mapped[Optional[float]] = mapped_column()
-    to_y: Mapped[Optional[float]] = mapped_column()
-    cushion: Mapped[Optional[str]] = mapped_column(String(16))
+    path_type: Mapped[str] = mapped_column(String(16), nullable=False, default="line")
+    point_x: Mapped[float] = mapped_column(nullable=False)
+    point_y: Mapped[float] = mapped_column(nullable=False)
+    event_kind: Mapped[Optional[str]] = mapped_column(String(64))
     notes: Mapped[Optional[str]] = mapped_column(Text())
 
     scene: Mapped[Scene] = relationship(back_populates="trajectory_segments")

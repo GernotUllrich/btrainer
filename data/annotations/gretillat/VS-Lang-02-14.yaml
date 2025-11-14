@@ -1,0 +1,124 @@
+scene:
+  id: VS-Lang-02-14
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.14 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 198
+  difficulty: easy
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 18.79
+      - 76.46
+    B2:
+      color: yellow
+      position:
+      - 13.5
+      - 78.85
+    B3:
+      color: red
+      position:
+      - 37.84
+      - 0.86
+  ghost_ball:
+    position:
+    - 14.36
+    - 77.22
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille'
+    - 'Hauteur d’attaque: demi-rétro'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 14.96
+      - 76.31
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.22
+      - 64.86
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 36.9
+      - 3.23
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 11.98
+      - 79.32
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 1.28
+      - 70.66
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.37
+      - 7.9
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'l l 3: Fort
+
+      This point, a little complicated to position, is on the other hand quite simple
+      to execute.
+
+      The only difficulty is to manage the trajectory of ball 2 and avoid the wrong
+      collision it
+
+      could cause. In case of a problem, a little left-hand effect allows the cue
+      ball to slightly
+
+      accelerate its race compared to the ball 2.
+
+      As for the force, it is a little less than 3 in this long gather shot where
+      the trajectories are
+
+      quite short.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -10,35 +10,35 @@ scene:
   table:
     type: carom_standard
     size_units:
-    - 40
-    - 80
+    - 40.0
+    - 80.0
     unit: diamonds
     origin: bottom_left
     grid_resolution: 0.5
     physical_size_cm:
-    - 284
-    - 142
+    - 284.0
+    - 142.0
     variant: match
   balls:
     B1:
       color: white
       position:
-      - 24.12
-      - 13.9
+      - 25.89
+      - 14.02
     B2:
       color: yellow
       position:
-      - 27.72
-      - 19.71
+      - 27.8
+      - 19.49
     B3:
       color: red
       position:
-      - 38.54
-      - 1.09
+      - 37.67
+      - 0.87
   ghost_ball:
     position:
-    - 27.71
-    - 19.64
+    - 27.8
+    - 18.67
     notes: Ghost Ball verbindet B1 mit B2 für 2/3-Volle Trefferlinie.
   ball_contact:
     fraction: 0.66
@@ -50,7 +50,7 @@ scene:
     attack_height: low
     effect_stage: stage_0
     effect_side: none
-    cue_inclination_deg: 0
+    cue_inclination_deg: 0.0
     notes:
     - Stoßhöhe tief für Rücklauf
   tempo_force:
@@ -59,31 +59,32 @@ scene:
     comments: fort × vitesse normale
   trajectory:
     B1:
-    - type: line
-      to:
-      - 27.71
-      - 19.64
-    - type: cushion
-      cushion: long
-      position:
-      - TODO
-      - TODO
-    - type: line
-      to:
-      - TODO
-      - TODO
+    - point:
+      - 27.51
+      - 17.81
+      path_type: line
+      event: Ghost
+      notes: null
+    - point:
+      - 36.59
+      - 2.56
+      path_type: line
+      event: ball_B3
+      notes: null
     B2:
-    - type: line
-      to:
-      - TODO
-      - TODO
-    - type: line
-      to:
-      - TODO
-      - TODO
-    B3:
-    - type: stationary
-      notes: B3 bleibt in Sammelzone
+    - point:
+      - 32.48
+      - 78.58
+      path_type: line
+      event: cushion_short
+      notes: null
+    - point:
+      - 38.68
+      - 7.35
+      path_type: line
+      event: null
+      notes: null
+    B3: []
   text:
     original_language: fr
     original_excerpt: 'Quantité de bille: 2/3 de bille. Hauteur d’attaque: basse.

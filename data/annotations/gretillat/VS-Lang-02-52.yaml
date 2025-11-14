@@ -1,0 +1,141 @@
+scene:
+  id: VS-Lang-02-52
+  title: Versammlungsstoß – Indirect Point By One Band – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.52 Indirect Point By One Band – Gather Shot By Two Bands
+    page: 237
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 20.0
+      - 12.06
+    B2:
+      color: yellow
+      position:
+      - 13.33
+      - 13.33
+    B3:
+      color: red
+      position:
+      - 2.36
+      - 77.31
+  ghost_ball:
+    position:
+    - 14.19
+    - 12.33
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille + 1 procédé
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille + 1 procédé'
+    - 'Hauteur d’attaque: rétro'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 15.16
+      - 12.39
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 8.1
+      - 1.25
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 5.79
+      - 5.77
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.48
+      - 11.52
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.08
+      - 23.42
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.28
+      - 38.76
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.28
+      - 75.76
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 1.05
+      - 19.65
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 38.89
+      - 39.99
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 6.55
+      - 75.72
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'This is a draw stroke where the player ball makes a curve which
+      is at the origin of the
+
+      difficulty of this point. The curve is more or less pronounced depending on
+      the attack
+
+      height and the energy transmitted, but mainly on the speed. As for the quantity
+      of ball, it is
+
+      primarily used to direct ball 2 into the gather shot zone.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

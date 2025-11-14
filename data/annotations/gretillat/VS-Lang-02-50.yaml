@@ -1,0 +1,120 @@
+scene:
+  id: VS-Lang-02-50
+  title: Versammlungsstoß – Direct Point – Gather Shot By Three Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.50 Direct Point – Gather Shot By Three Bands
+    page: 235
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 39.02
+      - 6.08
+    B2:
+      color: yellow
+      position:
+      - 39.21
+      - 11.17
+    B3:
+      color: red
+      position:
+      - 2.21
+      - 78.5
+  ghost_ball:
+    position:
+    - 39.17
+    - 9.35
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: presque plein
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: presque plein'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: un peu d’effet à droite'
+    - 'Energie: très fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: très fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 39.21
+      - 9.39
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.41
+      - 78.42
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 32.54
+      - 80.0
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 18.96
+      - 2.52
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.31
+      - 72.73
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'l l 4: Très fort
+
+      The cue ball is halfway
+
+      between the two diamonds.
+
+      This gather shot is particularly difficult, mainly because of the high force
+      to be transmitted
+
+      to the ball 2 and the resulting difficulty in movement. The amount of near-full
+      ball and the
+
+      height of attack are fixed, while the effect can be increased a little bit to
+      better gather shot
+
+      the ball 2. The trajectories of balls 1 and 2 intersect. In principle, the cue
+      ball makes its
+
+      passage before the ball 2.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

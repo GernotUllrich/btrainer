@@ -1,0 +1,165 @@
+scene:
+  id: VS-Lang-02-59
+  title: Versammlungsstoß – Indirect Point By Three Bands – Gather Shot By Two Bands
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.59 Indirect Point By Three Bands – Gather Shot By Two Bands
+    page: 244
+  difficulty: hard
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 36.95
+      - 10.0
+    B2:
+      color: yellow
+      position:
+      - 36.85
+      - 0.76
+    B3:
+      color: red
+      position:
+      - 3.26
+      - 1.54
+  ghost_ball:
+    position:
+    - 37.59
+    - 2.23
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 1/2 bille + 1 procédé
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 1/2 bille + 1 procédé'
+    - 'Hauteur d’attaque: coulé'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse rapide'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse rapide
+  trajectory:
+    B1:
+    - point:
+      - 37.51
+      - 2.23
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 39.77
+      - 1.33
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 37.67
+      - 1.29
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 34.5
+      - 0.6
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 31.38
+      - 1.21
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 26.77
+      - 1.37
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 23.49
+      - 0.84
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 19.29
+      - 1.25
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 14.89
+      - 1.54
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 10.0
+      - 1.74
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.74
+      - 1.46
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 17.03
+      - 78.53
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 2.11
+      - 8.41
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Ball 2 is also positioned 1.5
+
+      balls away from the long
+
+      9 cushion.
+
+      The amount of ball required to return ball 2 should be touched, but not too
+      full, to avoid
+
+      the wrong back touch of ball 2. For the trajectory of the cue ball, it is the
+      follow rotation
+
+      obtained by the attacking height and the speed that allows the repetition of
+      the small band.
+
+      If this rotation is too low, the cue ball moves away from the small band.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen

@@ -1,0 +1,119 @@
+scene:
+  id: VS-Lang-02-36
+  title: Versammlungsstoß – Indirect Point By Two Bands – Gather Shot By One Band
+  source:
+    work: Gretillat - L'apprentissage du billard français
+    section: 2.36 Indirect Point By Two Bands – Gather Shot By One Band
+    page: 221
+  difficulty: medium
+  description: 'TODO: Szene beschreiben.'
+  table:
+    type: carom_standard
+    size_units:
+    - 40.0
+    - 80.0
+    unit: diamonds
+    origin: bottom_left
+    grid_resolution: 0.5
+    physical_size_cm:
+    - 284.0
+    - 142.0
+    variant: match
+  balls:
+    B1:
+      color: white
+      position:
+      - 26.67
+      - 13.33
+    B2:
+      color: yellow
+      position:
+      - 4.44
+      - 40.0
+    B3:
+      color: red
+      position:
+      - 4.62
+      - 77.75
+  ghost_ball:
+    position:
+    - 2.98
+    - 38.74
+    notes: Virtuelle Position des Spielballs bei Kontakt mit B2
+  ball_contact:
+    fraction: 0.0
+    label: 2/3 de bille
+  cue:
+    cue_direction:
+    - 0.0
+    - 0.0
+    attack_height: pending
+    effect_stage: stage_0
+    effect_side: none
+    cue_inclination_deg: 0.0
+    notes:
+    - 'Quantité de bille: 2/3 de bille'
+    - 'Hauteur d’attaque: au centre'
+    - 'Effet: sans effet'
+    - 'Energie: fort - vitesse normale'
+  tempo_force:
+    tempo: 0
+    force: 0
+    comments: fort - vitesse normale
+  trajectory:
+    B1:
+    - point:
+      - 0.68
+      - 36.54
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 3.02
+      - 38.61
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 0.63
+      - 49.97
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 4.75
+      - 76.78
+      path_type: line
+      event: null
+      notes: null
+    B2:
+    - point:
+      - 39.72
+      - 60.49
+      path_type: line
+      event: null
+      notes: null
+    - point:
+      - 8.91
+      - 76.87
+      path_type: line
+      event: null
+      notes: null
+    B3: []
+  text:
+    original_language: fr
+    original_excerpt: 'Ball 2 is 2 balls away from the
+
+      It is difficult to estimate exactly how much ball is needed to make this point,
+      since the cue
+
+      ball hits one band before colliding the ball 2. The player has a marker, as
+      long as the balls
+
+      are arranged as shown in the diagram. In principle, it is sufficient to aim
+      at the diamond of
+
+      the long cushion.'
+    de_summary: TODO – übersetzen
+  remarks:
+  - TODO – ergänzen
