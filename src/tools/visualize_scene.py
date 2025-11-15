@@ -189,8 +189,8 @@ TABLE_DIMENSIONS = {
     TableVariant.SMALL_TOURNAMENT: {
         'length_cm': 210.0,
         'width_cm': 105.0,
-        'length_units': 60.0,
-        'width_units': 30.0,
+        'length_units': 80.0,  # Diamond units sind unabhängig von Tischgröße - immer 80×40
+        'width_units': 40.0,
     },
 }
 

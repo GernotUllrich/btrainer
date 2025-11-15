@@ -51,7 +51,7 @@ Die YAML-Dateien speichern Positionen in **Diamond Units**:
 
 ### Turnier-Billard (`--tb` Flag)
 - **Größe**: 210×105 cm
-- **Diamond Units**: 60×30
+- **Diamond Units**: 80×40 (gleich wie Match-Billard - Diamond Units sind unabhängig von Tischgröße)
 - **Skalierungsfaktor**: ~0.739 (105/142 ≈ 210/284)
 
 ## Proportionale Skalierung
