@@ -2,13 +2,15 @@
 """Visualisiert eine Szenen-YAML mit Trajektorien auf dem zugehörigen Bild."""
 
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Literal, Optional
 
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 import numpy as np
 import typer
 
 from src.services.ingest import load_scene_yaml
+from src.db.models import TableVariant
 
 app = typer.Typer(help="Visualisiert Szenen-YAMLs mit Trajektorien")
 
@@ -171,6 +173,415 @@ def visualize(
     
     if output_path:
         plt.savefig(output_path, dpi=150, bbox_inches='tight')
+        typer.echo(f"Bild gespeichert: {output_path}")
+    else:
+        plt.show()
+
+
+# Table dimensions in cm
+TABLE_DIMENSIONS = {
+    TableVariant.MATCH: {
+        'length_cm': 284.0,
+        'width_cm': 142.0,
+        'length_units': 80.0,
+        'width_units': 40.0,
+    },
+    TableVariant.SMALL_TOURNAMENT: {
+        'length_cm': 210.0,
+        'width_cm': 105.0,
+        'length_units': 60.0,
+        'width_units': 30.0,
+    },
+}
+
+# Ball diameter in mm (61.5 mm for carom billiards)
+BALL_DIAMETER_MM = 61.5
+
+
+def _get_table_dimensions(table_variant: TableVariant) -> Dict[str, float]:
+    """Gibt die Tabellendimensionen für eine Variante zurück."""
+    return TABLE_DIMENSIONS[table_variant]
+
+
+def _table_to_cm(table_point: Tuple[float, float], table_variant: TableVariant) -> Tuple[float, float]:
+    """Transformiert Tisch-Koordinaten (in diamond units) zu cm."""
+    x, y = table_point
+    dims = _get_table_dimensions(table_variant)
+    
+    # Skaliere von diamond units zu cm
+    x_cm = (x / dims['length_units']) * dims['length_cm']
+    y_cm = (y / dims['width_units']) * dims['width_cm']
+    
+    return x_cm, y_cm
+
+
+def _draw_table_grid(ax, length_cm: float, width_cm: float, 
+                     length_units: float, width_units: float,
+                     margin_cm: float = 5.0, rotate: bool = False,
+                     display_length_cm: float = None, display_width_cm: float = None,
+                     display_length_units: float = None, display_width_units: float = None,
+                     orig_length_cm: float = None, orig_width_cm: float = None):
+    """Zeichnet das Tischgitter (Banden, Diamantlinien, Cadrelinien)."""
+    
+    # Verwende Display-Dimensionen für Rechteck (falls angegeben, sonst Original)
+    if display_length_cm is None:
+        display_length_cm = length_cm
+    if display_width_cm is None:
+        display_width_cm = width_cm
+    if display_length_units is None:
+        display_length_units = length_units
+    if display_width_units is None:
+        display_width_units = width_units
+    
+    # Zeichne Tischränder (Bandeninnenseiten) als dünne durchgehende Linie
+    # Portrait-Mode: width×length (142×284), x: 0..142, y: 0..284
+    # Ursprung links unten, x horizontal (kurze Seite), y vertikal (lange Seite)
+    # Dünne Linie, damit Innenkante genau bei (0,0) liegt
+    rect = mpatches.Rectangle(
+        (0, 0), display_length_cm, display_width_cm,
+        linewidth=1, edgecolor='black', facecolor='none', zorder=1
+    )
+    ax.add_patch(rect)
+    
+    # Zeichne Klein-Cadre-Linien - durchgehend, fein
+    # Cadreabstand x = 1/3 der Tischbreite (kurze Seite)
+    # 4 Linien: 2 lange (dritteln in Längsrichtung) und 2 kurze (im Cadreabstand von den kurzen Banden)
+    # CADREABSTAND = 1/3 der Tischbreite (kurze Seite)
+    # Horizontale Cadrelinien: Dritteln den Tisch (3 gleichbreite Streifen)
+    # Vertikale Cadrelinien: Im CADREABSTAND von den kurzen Banden (links/rechts)
+    if rotate:
+        # Portrait-Mode: x ist kurze Seite (width), y ist lange Seite (length)
+        # CADREABSTAND = 1/3 der Tischbreite = 1/3 von x (kurze Seite)
+        cadre_distance_units = display_length_units / 3.0  # x ist kurze Seite
+        cadre_distance_cm = display_length_cm / 3.0
+        
+        # Horizontale Cadrelinien (parallel zu x): Dritteln den Tisch (entlang y - lange Seite)
+        # Diese bilden 3 gleichbreite horizontale Streifen
+        for i in [1, 2]:
+            y_pos = (i / 3.0) * display_width_cm  # y ist lange Seite
+            ax.axhline(y_pos, color='darkgray', linewidth=0.8, linestyle='-', zorder=2)
+        
+        # Vertikale Cadrelinien (parallel zu y): Im CADREABSTAND von den kurzen Banden (links/rechts entlang x)
+        # NICHT dritteln! Nur 2 Linien im CADREABSTAND von links und rechts
+        x_left = cadre_distance_cm  # CADREABSTAND von linker Bande (x = 0)
+        x_right = display_length_cm - cadre_distance_cm  # CADREABSTAND von rechter Bande (x = width)
+        ax.axvline(x_left, color='darkgray', linewidth=0.8, linestyle='-', zorder=2)
+        ax.axvline(x_right, color='darkgray', linewidth=0.8, linestyle='-', zorder=2)
+    else:
+        # Landscape-Mode: x ist lange Seite (length), y ist kurze Seite (width)
+        # CADREABSTAND = 1/3 der Tischbreite = 1/3 von y (kurze Seite)
+        cadre_distance_units = display_width_units / 3.0  # y ist kurze Seite
+        cadre_distance_cm = display_width_cm / 3.0
+        
+        # Vertikale Cadrelinien (parallel zu y): Im CADREABSTAND von den kurzen Banden (links/rechts entlang x)
+        # NICHT dritteln! Nur 2 Linien im CADREABSTAND von links und rechts
+        x_left = cadre_distance_cm  # CADREABSTAND von linker Bande (x = 0)
+        x_right = display_length_cm - cadre_distance_cm  # CADREABSTAND von rechter Bande (x = length)
+        ax.axvline(x_left, color='darkgray', linewidth=0.8, linestyle='-', zorder=2)
+        ax.axvline(x_right, color='darkgray', linewidth=0.8, linestyle='-', zorder=2)
+        
+        # Horizontale Cadrelinien (parallel zu x): Dritteln den Tisch (entlang y - kurze Seite)
+        # Diese bilden 3 gleichbreite horizontale Streifen
+        for i in [1, 2]:
+            y_pos = (i / 3.0) * display_width_cm  # y ist kurze Seite
+            ax.axhline(y_pos, color='darkgray', linewidth=0.8, linestyle='-', zorder=2)
+    
+    # Zeichne Diamantlinien - gestrichelt, fein
+    # Diamantenlinien teilen IMMER in 4×8 Quadrate, unabhängig von der Tischgröße
+    # Lange Seite: 8 Quadrate → 7 Linien
+    # Kurze Seite: 4 Quadrate → 3 Linien
+    if rotate:
+        # Portrait-Mode: x ist kurze Seite, y ist lange Seite
+        # Vertikale Diamantlinien (parallel zu y, entlang x - kurze Seite): 4 Quadrate → 3 Linien
+        for i in range(1, 4):  # 3 Linien für 4 Quadrate
+            x_pos = (i / 4.0) * display_length_cm
+            ax.axvline(x_pos, color='gray', linewidth=0.5, linestyle='--', zorder=2)
+        
+        # Horizontale Diamantlinien (parallel zu x, entlang y - lange Seite): 8 Quadrate → 7 Linien
+        for i in range(1, 8):  # 7 Linien für 8 Quadrate
+            y_pos = (i / 8.0) * display_width_cm
+            ax.axhline(y_pos, color='gray', linewidth=0.5, linestyle='--', zorder=2)
+    else:
+        # Landscape-Mode: x ist lange Seite, y ist kurze Seite
+        # Vertikale Diamantlinien (parallel zu y, entlang x - lange Seite): 8 Quadrate → 7 Linien
+        for i in range(1, 8):  # 7 Linien für 8 Quadrate
+            x_pos = (i / 8.0) * display_length_cm
+            ax.axvline(x_pos, color='gray', linewidth=0.5, linestyle='--', zorder=2)
+        
+        # Horizontale Diamantlinien (parallel zu x, entlang y - kurze Seite): 4 Quadrate → 3 Linien
+        for i in range(1, 4):  # 3 Linien für 4 Quadrate
+            y_pos = (i / 4.0) * display_width_cm
+            ax.axhline(y_pos, color='gray', linewidth=0.5, linestyle='--', zorder=2)
+    
+    # Setze Achsenbegrenzungen mit Margin
+    # Portrait-Mode: x: 0..width (142 cm), y: 0..length (284 cm)
+    # Ursprung links unten (0,0)
+    ax.set_xlim(-margin_cm, display_length_cm + margin_cm)  # x: 0..142
+    ax.set_ylim(-margin_cm, display_width_cm + margin_cm)   # y: 0..284
+    ax.set_aspect('equal')
+    ax.grid(False)
+    # WICHTIG: y-Achse sollte nicht invertiert werden (Ursprung unten)
+
+
+def _draw_ball(ax, position_cm: Tuple[float, float], ball_name: str):
+    """Zeichnet einen Ball mit korrektem Stil."""
+    x_cm, y_cm = position_cm
+    
+    # Ball-Radius in cm
+    radius_cm = (BALL_DIAMETER_MM / 2) / 10.0
+    
+    # B1 und B2: weiß mit schwarzem Rand
+    # B3: schwarz gefüllt
+    if ball_name == 'B3':
+        facecolor = 'black'
+        edgecolor = 'black'
+        textcolor = 'white'
+    elif ball_name in ['B1', 'B2']:
+        facecolor = 'white'
+        edgecolor = 'black'
+        textcolor = 'black'
+    else:  # Ghost Ball
+        facecolor = 'none'
+        edgecolor = 'gray'
+        textcolor = 'gray'
+    
+    # Zeichne Ball-Kreis
+    # Linienstärke: 1.0 Pixel für bessere Beurteilung der Daten
+    if ball_name == 'GHOST':
+        circle = mpatches.Circle(
+            (x_cm, y_cm), radius_cm,
+            facecolor=facecolor, edgecolor=edgecolor, linewidth=1.0,
+            linestyle='--', zorder=10
+        )
+    else:
+        circle = mpatches.Circle(
+            (x_cm, y_cm), radius_cm,
+            facecolor=facecolor, edgecolor=edgecolor, linewidth=1.0,
+            zorder=10
+        )
+    ax.add_patch(circle)
+    
+    # Zeichne Label - zentriert auf dem Ball, Text bleibt immer aufrecht
+    ax.text(x_cm, y_cm, ball_name, ha='center', va='center',
+            fontsize=10, fontweight='bold', color=textcolor, zorder=11, rotation=0)
+
+
+def _draw_trajectory(ax, trajectory_points_cm: List[Tuple[float, float]], 
+                     ball_name: str, start_position_cm: Tuple[float, float]):
+    """Zeichnet eine Trajektorie."""
+    trajectory_colors = {
+        'B1': 'red',
+        'B2': 'blue',
+        'B3': 'green',
+    }
+    color = trajectory_colors.get(ball_name, 'orange')
+    
+    # Verbinde alle Punkte
+    all_points = [start_position_cm] + trajectory_points_cm
+    if len(all_points) < 2:
+        return
+    
+    xs, ys = zip(*all_points)
+    ax.plot(xs, ys, color=color, linewidth=2, alpha=0.7, zorder=5)
+    
+    # Zeichne Punkte
+    for i, (x, y) in enumerate(trajectory_points_cm, 1):
+        ax.plot(x, y, 'o', color=color, markersize=6, zorder=6)
+
+
+@app.command()
+def draw(
+    yaml_path: Path = typer.Argument(..., help="Pfad zur Szenen-YAML-Datei"),
+    tb: bool = typer.Option(False, "--tb", help="Turnier-Billard verwenden (210×105 cm statt 284×142 cm)"),
+    portrait: bool = typer.Option(False, "--portrait", help="Portrait-Mode: x=kurze Seite (0..40), y=lange Seite (0..80)"),
+    landscape: bool = typer.Option(True, "--landscape/--no-landscape", help="Landscape-Mode (Default): x=lange Seite (0..80), y=kurze Seite (0..40), 90° nach rechts gedreht"),
+    output_path: Optional[Path] = typer.Option(None, "--output", "-o", help="Ausgabepfad für das Bild (optional)"),
+    dpi: int = typer.Option(150, "--dpi", help="Auflösung für gespeichertes Bild"),
+) -> None:
+    """Zeichnet eine Szenen-YAML auf einem sauberen Canvas mit Gitter.
+    
+    Landscape-Mode (Default):
+    - Ursprung links unten (0,0)
+    - x-Achse: horizontal, lange Bande (0..80 diamond units = 284 cm)
+    - y-Achse: vertikal, kurze Bande (0..40 diamond units = 142 cm)
+    - Alle Positionen um 90° nach rechts gedreht
+    
+    Portrait-Mode (--portrait):
+    - Ursprung links unten (0,0)
+    - x-Achse: horizontal, kurze Bande (0..40 diamond units = 142 cm)
+    - y-Achse: vertikal, lange Bande (0..80 diamond units = 284 cm)
+    """
+    
+    # Bestimme Modus: Wenn --portrait gesetzt, verwende Portrait, sonst Landscape
+    use_portrait = portrait
+    
+    scene_model = load_scene_yaml(yaml_path)
+    
+    # Bestimme Tischvariante
+    if tb:
+        # --tb gesetzt: Turnier-Billard verwenden
+        table_var = TableVariant.SMALL_TOURNAMENT
+    else:
+        # Verwende Variante aus YAML
+        table_var = scene_model.table.variant
+    
+    dims = _get_table_dimensions(table_var)
+    orig_dims = _get_table_dimensions(scene_model.table.variant)
+    
+    # YAML-Koordinaten: x = entlang kurzer Seite (0..40), y = entlang langer Seite (0..80)
+    if use_portrait:
+        # Portrait-Mode: x entlang width (kurze Seite), y entlang length (lange Seite)
+        display_length_cm = dims['width_cm']   # x: 0..142 (kurze Seite horizontal)
+        display_width_cm = dims['length_cm']   # y: 0..284 (lange Seite vertikal)
+        display_length_units = dims['width_units']  # 40 (x-Achse)
+        display_width_units = dims['length_units']  # 80 (y-Achse)
+        fig, ax = plt.subplots(figsize=(10, 14))  # Portrait: höher als breit
+    else:
+        # Landscape-Mode: x entlang length (lange Seite), y entlang width (kurze Seite)
+        display_length_cm = dims['length_cm']  # x: 0..284 (lange Seite horizontal)
+        display_width_cm = dims['width_cm']    # y: 0..142 (kurze Seite vertikal)
+        display_length_units = dims['length_units']  # 80 (x-Achse)
+        display_width_units = dims['width_units']    # 40 (y-Achse)
+        fig, ax = plt.subplots(figsize=(14, 10))  # Landscape: breiter als hoch
+    
+    # Transformiere Positionen von diamond units zu cm
+    # YAML-Koordinaten: (x, y) wobei x entlang kurzer Seite (0..40), y entlang langer Seite (0..80)
+    balls_cm = {}
+    for ball_name, ball_data in scene_model.balls.items():
+        x_diamond, y_diamond = ball_data.position
+        
+        if use_portrait:
+            # Portrait-Mode: x entlang kurzer Seite (width), y entlang langer Seite (length)
+            # Keine Transformation nötig, aber proportionale Skalierung erforderlich
+            # Schritt 1: Skaliere auf Original-Dimensionen (bezogen auf orig_dims)
+            x_cm_orig = (x_diamond / orig_dims['width_units']) * orig_dims['width_cm']  # x entlang kurzer Seite
+            y_cm_orig = (y_diamond / orig_dims['length_units']) * orig_dims['length_cm']  # y entlang langer Seite
+            
+            # Schritt 2: Skaliere proportional auf Ziel-Dimensionen
+            scale_factor_width = dims['width_cm'] / orig_dims['width_cm']  # Skalierungsfaktor für kurze Seite
+            scale_factor_length = dims['length_cm'] / orig_dims['length_cm']  # Skalierungsfaktor für lange Seite
+            x_cm_final = x_cm_orig * scale_factor_width  # x entlang kurzer Seite
+            y_cm_final = y_cm_orig * scale_factor_length  # y entlang langer Seite
+        else:
+            # Landscape-Mode: Um 90° nach rechts gedreht
+            # WICHTIG: Für proportionale Positionen müssen wir zuerst auf Original-Dimensionen skalieren,
+            # dann transformieren, dann proportional auf Ziel-Dimensionen skalieren
+            # Oder einfacher: Verwende orig_dims für Skalierung, dann transformiere, dann skaliere proportional
+            
+            # Schritt 1: Skaliere auf Original-Dimensionen (bezogen auf orig_dims)
+            x_cm_orig = (x_diamond / orig_dims['width_units']) * orig_dims['width_cm']  # x entlang kurzer Seite
+            y_cm_orig = (y_diamond / orig_dims['length_units']) * orig_dims['length_cm']  # y entlang langer Seite
+            
+            # Schritt 2: Transformiere (Rotation um 90° nach rechts)
+            # (x_new, y_new) = (y_old, width - x_old)
+            x_transformed = y_cm_orig  # y wird zu x (lange Seite)
+            y_transformed = orig_dims['width_cm'] - x_cm_orig  # width - x wird zu y (kurze Seite)
+            
+            # Schritt 3: Skaliere proportional auf Ziel-Dimensionen
+            scale_factor_length = dims['length_cm'] / orig_dims['length_cm']  # Skalierungsfaktor für lange Seite
+            scale_factor_width = dims['width_cm'] / orig_dims['width_cm']  # Skalierungsfaktor für kurze Seite
+            x_cm_final = x_transformed * scale_factor_length  # x entlang langer Seite
+            y_cm_final = y_transformed * scale_factor_width  # y entlang kurzer Seite
+        
+        balls_cm[ball_name] = (x_cm_final, y_cm_final)
+    
+    # Transformiere Ghost Ball
+    ghost_ball_cm = None
+    if scene_model.ghost_ball:
+        gx_diamond, gy_diamond = scene_model.ghost_ball.position
+        
+        if use_portrait:
+            # Portrait-Mode: proportionale Skalierung
+            gx_cm_orig = (gx_diamond / orig_dims['width_units']) * orig_dims['width_cm']
+            gy_cm_orig = (gy_diamond / orig_dims['length_units']) * orig_dims['length_cm']
+            scale_factor_width = dims['width_cm'] / orig_dims['width_cm']
+            scale_factor_length = dims['length_cm'] / orig_dims['length_cm']
+            gx_cm_final = gx_cm_orig * scale_factor_width
+            gy_cm_final = gy_cm_orig * scale_factor_length
+        else:
+            # Landscape-Mode: Um 90° nach rechts gedreht
+            # Wie bei normalen Bällen: Skaliere auf Original, transformiere, skaliere proportional
+            gx_cm_orig = (gx_diamond / orig_dims['width_units']) * orig_dims['width_cm']
+            gy_cm_orig = (gy_diamond / orig_dims['length_units']) * orig_dims['length_cm']
+            gx_transformed = gy_cm_orig
+            gy_transformed = orig_dims['width_cm'] - gx_cm_orig
+            scale_factor_length = dims['length_cm'] / orig_dims['length_cm']
+            scale_factor_width = dims['width_cm'] / orig_dims['width_cm']
+            gx_cm_final = gx_transformed * scale_factor_length
+            gy_cm_final = gy_transformed * scale_factor_width
+        
+        ghost_ball_cm = (gx_cm_final, gy_cm_final)
+    
+    # Zeichne Gitter
+    _draw_table_grid(ax, display_length_cm, display_width_cm, 
+                     display_length_units, display_width_units, rotate=use_portrait,
+                     display_length_cm=display_length_cm, display_width_cm=display_width_cm,
+                     display_length_units=display_length_units, display_width_units=display_width_units,
+                     orig_length_cm=dims['length_cm'], orig_width_cm=dims['width_cm'])
+    
+    # Zeichne Trajektorien (vor den Bällen, damit sie darunter liegen)
+    for ball_name, segments in scene_model.trajectory.items():
+        if not segments or ball_name not in balls_cm:
+            continue
+        
+        start_pos = balls_cm[ball_name]
+        trajectory_points_cm = []
+        
+        for segment in segments:
+            tx_diamond, ty_diamond = segment.point
+            
+            if use_portrait:
+                # Portrait-Mode: proportionale Skalierung
+                tx_cm_orig = (tx_diamond / orig_dims['width_units']) * orig_dims['width_cm']
+                ty_cm_orig = (ty_diamond / orig_dims['length_units']) * orig_dims['length_cm']
+                scale_factor_width = dims['width_cm'] / orig_dims['width_cm']
+                scale_factor_length = dims['length_cm'] / orig_dims['length_cm']
+                tx_cm_final = tx_cm_orig * scale_factor_width
+                ty_cm_final = ty_cm_orig * scale_factor_length
+            else:
+                # Landscape-Mode: Um 90° nach rechts gedreht
+                # Wie bei normalen Bällen: Skaliere auf Original, transformiere, skaliere proportional
+                tx_cm_orig = (tx_diamond / orig_dims['width_units']) * orig_dims['width_cm']
+                ty_cm_orig = (ty_diamond / orig_dims['length_units']) * orig_dims['length_cm']
+                tx_transformed = ty_cm_orig
+                ty_transformed = orig_dims['width_cm'] - tx_cm_orig
+                scale_factor_length = dims['length_cm'] / orig_dims['length_cm']
+                scale_factor_width = dims['width_cm'] / orig_dims['width_cm']
+                tx_cm_final = tx_transformed * scale_factor_length
+                ty_cm_final = ty_transformed * scale_factor_width
+            
+            trajectory_points_cm.append((tx_cm_final, ty_cm_final))
+        
+        _draw_trajectory(ax, trajectory_points_cm, ball_name, start_pos)
+    
+    # Zeichne Bälle
+    for ball_name, position_cm in balls_cm.items():
+        _draw_ball(ax, position_cm, ball_name)
+    
+    # Zeichne Ghost Ball
+    if ghost_ball_cm:
+        _draw_ball(ax, ghost_ball_cm, 'GHOST')
+    
+    # Titel und Labels
+    table_name = "Match-Tisch" if table_var == TableVariant.MATCH else "Turnier-Tisch"
+    if use_portrait:
+        # Portrait-Mode: x entlang kurzer Seite (width), y entlang langer Seite (length)
+        title = f"PORTRAIT MODE\n{scene_model.id}: {scene_model.title}\n{table_name}: {display_length_cm:.0f}×{display_width_cm:.0f} cm"
+        title += f"\nKoordinatensystem: Ursprung links unten, x: 0..{int(display_length_units)} (kurze Seite), y: 0..{int(display_width_units)} (lange Seite)"
+        ax.set_xlabel(f"x (diamond units: 0..{int(display_length_units)}, kurze Seite)", fontsize=10)
+        ax.set_ylabel(f"y (diamond units: 0..{int(display_width_units)}, lange Seite)", fontsize=10)
+    else:
+        # Landscape-Mode: x entlang langer Seite (length), y entlang kurzer Seite (width), 90° nach rechts gedreht
+        title = f"LANDSCAPE MODE (NORMAL)\n{scene_model.id}: {scene_model.title}\n{table_name}: {display_length_cm:.0f}×{display_width_cm:.0f} cm"
+        title += f"\nKoordinatensystem: Ursprung links unten, x: 0..{int(display_length_units)} (lange Seite), y: 0..{int(display_width_units)} (kurze Seite), 90° nach rechts gedreht"
+        ax.set_xlabel(f"x (diamond units: 0..{int(display_length_units)}, lange Seite)", fontsize=10)
+        ax.set_ylabel(f"y (diamond units: 0..{int(display_width_units)}, kurze Seite)", fontsize=10)
+    ax.set_title(title, fontsize=12, fontweight='bold', pad=20)
+    
+    plt.tight_layout()
+    
+    if output_path:
+        plt.savefig(output_path, dpi=dpi, bbox_inches='tight')
         typer.echo(f"Bild gespeichert: {output_path}")
     else:
         plt.show()
