@@ -153,17 +153,17 @@ radius_cm = (BALL_DIAMETER_MM / 2) / 10.0
 
 #### Portrait-Mode
 
-- **Horizontale Cadrelinien** (lange Linien): Dritteln den Tisch in Längsrichtung
+- **Lange Cadrelinien** (horizontal, parallel zur x-Achse): Dritteln den Tisch in Längsrichtung
   - 2 Linien bei y = (1/3) × length und (2/3) × length
-- **Vertikale Cadrelinien** (kurze Linien): Im CADREABSTAND von den kurzen Banden
+- **Kurze Cadrelinien** (vertikal, parallel zur y-Achse): Im CADREABSTAND von den kurzen Banden
   - Linke Linie: x = CADREABSTAND (von linker Bande)
   - Rechte Linie: x = width - CADREABSTAND (von rechter Bande)
 
 #### Landscape-Mode
 
-- **Vertikale Cadrelinien** (lange Linien): Dritteln den Tisch in Längsrichtung
+- **Lange Cadrelinien** (vertikal, parallel zur y-Achse): Dritteln den Tisch in Längsrichtung
   - 2 Linien bei x = (1/3) × length und (2/3) × length
-- **Horizontale Cadrelinien** (kurze Linien): Im CADREABSTAND von den kurzen Banden
+- **Kurze Cadrelinien** (horizontal, parallel zur x-Achse): Im CADREABSTAND von den kurzen Banden
   - Untere Linie: y = CADREABSTAND (von unterer Bande)
   - Obere Linie: y = width - CADREABSTAND (von oberer Bande)
 

@@ -244,11 +244,10 @@ def _draw_table_grid(ax, length_cm: float, width_cm: float,
     ax.add_patch(rect)
     
     # Zeichne Klein-Cadre-Linien - durchgehend, fein
-    # Cadreabstand x = 1/3 der Tischbreite (kurze Seite)
     # 4 Linien: 2 lange (dritteln in Längsrichtung) und 2 kurze (im Cadreabstand von den kurzen Banden)
     # CADREABSTAND = 1/3 der Tischbreite (kurze Seite)
-    # Horizontale Cadrelinien: Dritteln den Tisch (3 gleichbreite Streifen)
-    # Vertikale Cadrelinien: Im CADREABSTAND von den kurzen Banden (links/rechts)
+    # Lange Cadrelinien: Dritteln den Tisch in Längsrichtung (3 gleichbreite Streifen)
+    # Kurze Cadrelinien: Im CADREABSTAND von den kurzen Banden
     if rotate:
         # Portrait-Mode: x ist kurze Seite (width), y ist lange Seite (length)
         # CADREABSTAND = 1/3 der Tischbreite = 1/3 von x (kurze Seite)
